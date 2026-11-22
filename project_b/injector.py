@@ -91,7 +91,7 @@ def inject(df: pd.DataFrame, pid: str, rate: float, seed: int = 0):
                 cp[c] = fdt(t + sh).where(t.notna(), None)
             cp["Unique Key"] = d["Unique Key"].max() + 1 + np.arange(len(cp))
             alt = rng.random(len(cp)) < 0.5
-            cp.loc[alt, "Resolution Description"] = cp.loc[alt, "Resolution Description"].str.rstrip(".") + " ."
+            cp.loc[alt, "Resolution Description"] = cp.loc[alt, "Resolution Description"].fillna("").astype(str).str.rstrip(".") + " ."
         cp.index = idx + 0.5
         d = pd.concat([d, cp]).sort_index(kind="stable")
         rows = (d.index.values % 1) == 0.5
@@ -119,21 +119,25 @@ def inject(df: pd.DataFrame, pid: str, rate: float, seed: int = 0):
         idx = _pick(rng, np.ones(n, bool), rate)
         for i in idx:
             own = d.at[d.index[i], "Complaint Type"]
-            other = rng.choice([c for c in S.COMPLAINTS if c != own])
-            ds = [x for x in S.COMPLAINTS[other][1] if x not in S.COMPLAINTS[own][1]] or S.COMPLAINTS[other][1]
+            choices = [c for c in S.COMPLAINTS if c != own]
+            other = rng.choice(choices if choices else list(S.COMPLAINTS))
+            ds = [x for x in S.COMPLAINTS[other][1] if own in S.COMPLAINTS and x not in S.COMPLAINTS[own][1]] or S.COMPLAINTS[other][1]
             d.at[d.index[i], "Descriptor"] = rng.choice(ds)
         rows = np.zeros(n, bool); rows[idx] = True
     elif pid == "p11":
         idx = _pick(rng, np.ones(n, bool), rate)
         for i in idx:
-            a = S.AGENCY_SHORT[d.at[d.index[i], "Agency"]]
+            ag_raw = d.at[d.index[i], "Agency"]
+            a = S.AGENCY_SHORT.get(ag_raw, f"The Department of {ag_raw}")
             tpl = S.OPEN_TPL if d.at[d.index[i], "Status"] == "Closed" else S.CLOSED_TPL
             d.at[d.index[i], "Resolution Description"] = tpl[rng.integers(len(tpl))].format(a=a)
         rows = np.zeros(n, bool); rows[idx] = True
     elif pid == "p12":
         idx = _pick(rng, np.ones(n, bool), rate)
         for i in idx:
-            d.at[d.index[i], "Resolution Description"] = d.at[d.index[i], "Resolution Description"] + " " + _pii(rng)
+            cur_desc = d.at[d.index[i], "Resolution Description"]
+            base_txt = "" if pd.isna(cur_desc) else str(cur_desc)
+            d.at[d.index[i], "Resolution Description"] = (base_txt + " " + _pii(rng)).strip()
         rows = np.zeros(n, bool); rows[idx] = True
     else:
         raise ValueError(pid)

@@ -51,6 +51,7 @@ def _clean(t: str) -> str:
     t = re.sub(r"\b80\s*d\b", "sec80d", t)
     t = t.replace("house rent allowance", "hra").replace("₹", "rs ")
     t = re.sub(r"\brs\.\s*", "rs ", t)
+    t = re.sub(r"\bi\.e\.?", ", which is", t)
     return t
 
 

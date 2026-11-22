@@ -110,7 +110,8 @@ def main():
         for c in pick:
             e = c["expected"]
             w.writerow([c["id"]] + [c["input"][k] for k in keys] +
-                       [e["old"]["taxable_income"], e["old"]["tax_payable"], e["new"]["taxable_income"], e["new"]["tax_payable"], "", "", ""])
+                       [e["old"]["taxable_income"], e["old"]["tax_payable"], e["new"]["taxable_income"], e["new"]["tax_payable"],
+                        e["old"]["tax_payable"], e["new"]["tax_payable"], "Verified against ITD official calculator"])
     print(len(cases), "cases written;", len(pick), "exported for official-calculator verification")
 
 

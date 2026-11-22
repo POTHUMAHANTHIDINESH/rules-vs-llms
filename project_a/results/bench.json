@@ -13,8 +13,8 @@
    "trace_rate": 1.0,
    "wrong_ids": [],
    "silent_wrong": 0,
-   "latency_ms_p50": 0.013891000037347112,
-   "latency_ms_p95": 0.022962000002735294,
+   "latency_ms_p50": 0.018700000509852543,
+   "latency_ms_p95": 0.027300000510877,
    "cost_per_1000_usd": 0.0,
    "determinism": {
     "inputs": 50,
@@ -34,8 +34,8 @@
    "trace_rate": 1.0,
    "wrong_ids": [],
    "silent_wrong": 0,
-   "latency_ms_p50": 0.014764000013656187,
-   "latency_ms_p95": 0.02713899999662317,
+   "latency_ms_p50": 0.0213999992411118,
+   "latency_ms_p95": 0.028599999495781958,
    "cost_per_1000_usd": 0.0,
    "determinism": {
     "inputs": 50,

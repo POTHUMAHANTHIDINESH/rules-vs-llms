@@ -1,29 +1,53 @@
 {
- "source": "SYNTHETIC (dry run; these are NOT real NYC findings)",
+ "source": "REAL: project_b/data/nyc311_2023.csv",
  "created_date_unparseable": {
   "count": 0,
   "pct": 0.0,
   "examples": []
  },
  "created_outside_2023": {
-  "count": 1,
-  "pct": 0.0005,
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "closed_before_created": {
+  "count": 517,
+  "pct": 0.2585,
   "examples": [
    {
-    "Unique Key": 56199134,
-    "Created Date": "01/02/2024 06:35:41 AM"
+    "Unique Key": 56430946,
+    "Created Date": "01/03/2023 09:17:00 AM",
+    "Closed Date": "12/29/2022 09:17:00 AM"
+   },
+   {
+    "Unique Key": 56429902,
+    "Created Date": "01/03/2023 09:18:00 AM",
+    "Closed Date": "12/30/2022 09:18:00 AM"
+   },
+   {
+    "Unique Key": 56427599,
+    "Created Date": "01/03/2023 09:19:00 AM",
+    "Closed Date": "12/30/2022 09:19:00 AM"
    }
   ]
  },
- "closed_before_created": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
- },
  "closed_in_future_or_pre_2023": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 1142,
+  "pct": 0.571,
+  "examples": [
+   {
+    "Unique Key": 56417700,
+    "Closed Date": "05/13/2025 04:21:09 PM"
+   },
+   {
+    "Unique Key": 56418600,
+    "Closed Date": "05/13/2025 04:21:20 PM"
+   },
+   {
+    "Unique Key": 56413119,
+    "Closed Date": "05/13/2025 04:21:10 PM"
+   }
+  ]
  },
  "closed_date_missing_but_status_closed": {
   "count": 0,
@@ -31,9 +55,25 @@
   "examples": []
  },
  "closed_date_present_but_status_open": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 656,
+  "pct": 0.328,
+  "examples": [
+   {
+    "Unique Key": 56420192,
+    "Status": "Open",
+    "Closed Date": "01/02/2023 06:03:44 PM"
+   },
+   {
+    "Unique Key": 56503858,
+    "Status": "Assigned",
+    "Closed Date": "01/04/2023 03:30:00 PM"
+   },
+   {
+    "Unique Key": 56427943,
+    "Status": "Open",
+    "Closed Date": "01/03/2023 06:19:11 AM"
+   }
+  ]
  },
  "exact_duplicate_rows": {
   "count": 0,
@@ -46,23 +86,23 @@
   "examples": []
  },
  "latlon_missing": {
-  "count": 5948,
-  "pct": 2.974,
+  "count": 3549,
+  "pct": 1.7745,
   "examples": [
    {
-    "Unique Key": 56000170,
-    "Borough": "MANHATTAN",
-    "Incident Zip": "10020"
-   },
-   {
-    "Unique Key": 56000245,
-    "Borough": "BRONX",
-    "Incident Zip": "10475"
-   },
-   {
-    "Unique Key": 56000282,
+    "Unique Key": 56418774,
     "Borough": "BROOKLYN",
-    "Incident Zip": "11223"
+    "Incident Zip": 11220.0
+   },
+   {
+    "Unique Key": 56412433,
+    "Borough": "BROOKLYN",
+    "Incident Zip": NaN
+   },
+   {
+    "Unique Key": 56417817,
+    "Borough": "STATEN ISLAND",
+    "Incident Zip": 10309.0
    }
   ]
  },
@@ -77,62 +117,156 @@
   "examples": []
  },
  "zip_missing": {
-  "count": 2079,
-  "pct": 1.0395,
+  "count": 2588,
+  "pct": 1.294,
   "examples": [
    {
-    "Unique Key": 56000066
+    "Unique Key": 56412433
    },
    {
-    "Unique Key": 56000069
+    "Unique Key": 56408061
    },
    {
-    "Unique Key": 56000084
+    "Unique Key": 56413120
    }
   ]
  },
  "zip_not_5_digits": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 197412,
+  "pct": 98.706,
+  "examples": [
+   {
+    "Unique Key": 56416396,
+    "Incident Zip": 11379.0
+   },
+   {
+    "Unique Key": 56417527,
+    "Incident Zip": 11218.0
+   },
+   {
+    "Unique Key": 56416252,
+    "Incident Zip": 10453.0
+   }
+  ]
  },
  "zip_borough_mismatch": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 96,
+  "pct": 0.048,
+  "examples": [
+   {
+    "Unique Key": 56413505,
+    "Incident Zip": 10463.0,
+    "Borough": "MANHATTAN"
+   },
+   {
+    "Unique Key": 56425603,
+    "Incident Zip": 10463.0,
+    "Borough": "MANHATTAN"
+   },
+   {
+    "Unique Key": 56423924,
+    "Incident Zip": 10463.0,
+    "Borough": "MANHATTAN"
+   }
+  ]
  },
  "borough_unspecified_or_missing": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 598,
+  "pct": 0.299,
+  "examples": [
+   {
+    "Unique Key": 56414169
+   },
+   {
+    "Unique Key": 56416657
+   },
+   {
+    "Unique Key": 56420723
+   }
+  ]
  },
  "descriptor_missing": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 3726,
+  "pct": 1.863,
+  "examples": [
+   {
+    "Unique Key": 56417527,
+    "Complaint Type": "Illegal Fireworks"
+   },
+   {
+    "Unique Key": 56416463,
+    "Complaint Type": "Illegal Fireworks"
+   },
+   {
+    "Unique Key": 56415388,
+    "Complaint Type": "Encampment"
+   }
+  ]
  },
  "rare_complaint_descriptor_pair(<=2 rows)": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 211,
+  "pct": 0.1055,
+  "examples": [
+   {
+    "Unique Key": 56418559,
+    "Complaint Type": "Traffic Signal Condition",
+    "Descriptor": "Telco Connection Blk"
+   },
+   {
+    "Unique Key": 56417643,
+    "Complaint Type": "LinkNYC",
+    "Descriptor": "Touchscreen/Button Not Working"
+   },
+   {
+    "Unique Key": 56416371,
+    "Complaint Type": "Street Sign - Damaged",
+    "Descriptor": "St Name - Over Intersection"
+   }
+  ]
  },
  "resolution_missing": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 626,
+  "pct": 0.313,
+  "examples": [
+   {
+    "Unique Key": 56417152
+   },
+   {
+    "Unique Key": 56417228
+   },
+   {
+    "Unique Key": 56419303
+   }
+  ]
  },
  "pii_phone_or_email_in_resolution": {
-  "count": 0,
-  "pct": 0.0,
-  "examples": []
+  "count": 6352,
+  "pct": 3.176,
+  "examples": [
+   {
+    "Unique Key": 56415422,
+    "Resolution Description": "The Department of Environment Protection inspected your complaint but could not find the problem you reported. If the condition persists, please call 311 (or 212-639-9675 if calling from a non-New York City area code) with more detailed information to submit a new complaint."
+   },
+   {
+    "Unique Key": 56412618,
+    "Resolution Description": "The Department of Buildings reviewed this complaint and closed it. If the problem still exists, please call 311 and file a new complaint. If you are outside of New York City, please call (212) NEW-YORK (212-639-9675)."
+   },
+   {
+    "Unique Key": 56414154,
+    "Resolution Description": "The Department of Buildings attempted to investigate this complaint twice but could not gain access to the location. If the problem still exists, please call 311 and file a new complaint with additional access information. If you are outside of New York City, please call (212) NEW-YORK (212-639-9675)."
+   }
+  ]
  },
  "case_or_whitespace_variants_in_Agency": {
   "count": 0,
   "examples": []
  },
  "case_or_whitespace_variants_in_Complaint Type": {
-  "count": 0,
-  "examples": []
+  "count": 2,
+  "examples": [
+   "elevator",
+   "plumbing"
+  ]
  },
  "case_or_whitespace_variants_in_Borough": {
   "count": 0,
@@ -145,18 +279,18 @@
  "null_rate_by_column": {
   "Unique Key": 0.0,
   "Created Date": 0.0,
-  "Closed Date": 0.1394,
+  "Closed Date": 0.0042,
   "Agency": 0.0,
   "Complaint Type": 0.0,
-  "Descriptor": 0.0,
-  "Location Type": 0.0,
-  "Incident Zip": 0.0104,
-  "City": 0.0,
+  "Descriptor": 0.0186,
+  "Location Type": 0.1373,
+  "Incident Zip": 0.0129,
+  "City": 0.0435,
   "Borough": 0.0,
-  "Latitude": 0.0297,
-  "Longitude": 0.0297,
+  "Latitude": 0.0177,
+  "Longitude": 0.0177,
   "Status": 0.0,
-  "Resolution Description": 0.0,
+  "Resolution Description": 0.0031,
   "Open Data Channel Type": 0.0
  },
  "rows": 200000
