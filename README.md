@@ -1,7 +1,7 @@
 # Rules vs LLMs - Fire AI Take-Home Submission
 
 **Author:** Pothumahanthi Dinesh  
-**Repository:** https://github.com/dinesh25042006/rules-vs-llms
+**Repository:** https://github.com/POTHUMAHANTHIDINESH/rules-vs-llms
 
 A comprehensive comparative study evaluating deterministic rules, statistical/ML models, and Large Language Models (LLMs) across two mission-critical enterprise systems:
 1. **Project A:** Indian Income-Tax Engine (Old vs. New Regimes, FY 2024-25 & FY 2025-26).
