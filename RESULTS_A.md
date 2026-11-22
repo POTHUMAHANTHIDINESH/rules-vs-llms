@@ -10,7 +10,7 @@
 |---|---|---|---|
 | Rupee-exact accuracy (both regimes, 319 cases) | 100.0% (319/319; 0 errors) | NOT RUN (no GEMINI_API_KEY) | 100.0% (319/319; 0 errors) |
 | Determinism (same input x10; inputs with varying output) | 0/50 | NOT RUN (no GEMINI_API_KEY) | 0/50 |
-| Latency p50 / p95 | 0.019 ms / 0.027 ms | NOT RUN (no GEMINI_API_KEY) | 0.021 ms / 0.029 ms |
+| Latency p50 / p95 | 0.018 ms / 0.026 ms | NOT RUN (no GEMINI_API_KEY) | 0.021 ms / 0.032 ms |
 | Cost per 1,000 requests | $0 (CPU only) | NOT RUN (no GEMINI_API_KEY) | $0 (CPU only) |
 | Every rupee traces to a clause AND lines reconcile | 100.0% | NOT RUN (no GEMINI_API_KEY) | 100.0% |
 

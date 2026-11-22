@@ -28,30 +28,30 @@ Empirical data quality problems identified from profiling 200,000 rows of NYC 31
 ## Tasks 3-4 - per problem x detector (10 clean + 10 corrupted batches of 5000 rows; baseline 100000 rows)
 | Problem | Detector | Detection @headline rate | Row recall | False-alarm (clean batches / rows) | Rows/s | $/M rows (CPU) | Explain 0-4 |
 |---|---|---|---|---|---|---|---|
-| p01 Renamed or dropped column (rate 0.05) | rules | 100.0% | n/a | 0.0% / 0.000% | 176,242,515 | $0.0000 | 3.0 |
-| p01 Renamed or dropped column (rate 0.05) | stats | 100.0% | n/a | 0.0% / 0.000% | 92,936,803 | $0.0000 | 3.0 |
-| p02 Column type change (numbers as strings) (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 1,531,150 | $0.0000 | 4.0 |
-| p02 Column type change (numbers as strings) (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 1,100,066 | $0.0000 | 4.0 |
-| p03 Date format switch partway (rate 0.3) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 722,057 | $0.0000 | 4.0 |
-| p03 Date format switch partway (rate 0.3) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 131,104 | $0.0001 | 4.0 |
-| p04 Latitude/longitude swapped (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 6,269,671 | $0.0000 | 4.0 |
-| p04 Latitude/longitude swapped (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 2,164,259 | $0.0000 | 4.0 |
-| p05 Exact duplicates (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 200,224 | $0.0001 | 4.0 |
-| p05 Exact duplicates (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 201,924 | $0.0001 | 4.0 |
-| p06 Near-duplicates (rate 0.05) | rules | 100.0% | 96.8% | 100.0% / 7.374% | 147,877 | $0.0001 | 4.0 |
-| p06 Near-duplicates (rate 0.05) | stats | 100.0% | 41.2% | 100.0% / 0.646% | 136,400 | $0.0001 | 4.0 |
-| p07 Null spike in one agency (rate 0.3) | rules | 100.0% | 100.0% | 100.0% / 1.758% | 680,941 | $0.0000 | 4.0 |
-| p07 Null spike in one agency (rate 0.3) | stats | 100.0% | 100.0% | 10.0% / 0.006% | 651,352 | $0.0000 | 4.0 |
-| p08 Closed date before created date (rate 0.05) | rules | 100.0% | 100.0% | 50.0% / 0.206% | 171,079 | $0.0001 | 4.0 |
-| p08 Closed date before created date (rate 0.05) | stats | 10.0% | 0.0% | 10.0% / 0.002% | 181,431 | $0.0001 | 4.0 |
-| p09 ZIP inconsistent with borough (rate 0.05) | rules | 100.0% | 100.0% | 90.0% / 0.046% | 1,474,961 | $0.0000 | 4.0 |
-| p09 ZIP inconsistent with borough (rate 0.05) | stats | 100.0% | 100.0% | 100.0% / 0.070% | 2,624,768 | $0.0000 | 4.0 |
-| p10 Complaint Type inconsistent with Descriptor (rate 0.05) | rules | 100.0% | 100.0% | 100.0% / 48.764% | 1,018,065 | $0.0000 | 4.0 |
-| p10 Complaint Type inconsistent with Descriptor (rate 0.05) | stats | 100.0% | 99.7% | 100.0% / 2.246% | 1,190,096 | $0.0000 | 4.0 |
-| p11 Resolution Description contradicts Status (rate 0.05) | rules | 100.0% | 100.0% | 50.0% / 0.012% | 35,650 | $0.0003 | 4.0 |
-| p11 Resolution Description contradicts Status (rate 0.05) | stats | 100.0% | 0.8% | 100.0% / 0.568% | 29,559 | $0.0004 | 4.0 |
-| p12 Personal data in free text (rate 0.05) | rules | 100.0% | 83.9% | 100.0% / 3.120% | 35,431 | $0.0003 | 4.0 |
-| p12 Personal data in free text (rate 0.05) | stats | 100.0% | 1.4% | 30.0% / 0.008% | 51,789 | $0.0002 | 4.0 |
+| p01 Renamed or dropped column (rate 0.05) | rules | 100.0% | n/a | 0.0% / 0.000% | 201,857,084 | $0.0000 | 3.0 |
+| p01 Renamed or dropped column (rate 0.05) | stats | 100.0% | n/a | 0.0% / 0.000% | 132,731,619 | $0.0000 | 3.0 |
+| p02 Column type change (numbers as strings) (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 1,987,345 | $0.0000 | 4.0 |
+| p02 Column type change (numbers as strings) (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 1,967,605 | $0.0000 | 4.0 |
+| p03 Date format switch partway (rate 0.3) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 1,193,269 | $0.0000 | 4.0 |
+| p03 Date format switch partway (rate 0.3) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 220,943 | $0.0001 | 4.0 |
+| p04 Latitude/longitude swapped (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 9,581,114 | $0.0000 | 4.0 |
+| p04 Latitude/longitude swapped (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 3,433,076 | $0.0000 | 4.0 |
+| p05 Exact duplicates (rate 0.05) | rules | 100.0% | 100.0% | 0.0% / 0.000% | 315,621 | $0.0000 | 4.0 |
+| p05 Exact duplicates (rate 0.05) | stats | 100.0% | 100.0% | 0.0% / 0.000% | 324,085 | $0.0000 | 4.0 |
+| p06 Near-duplicates (rate 0.05) | rules | 100.0% | 96.8% | 100.0% / 7.374% | 172,185 | $0.0001 | 4.0 |
+| p06 Near-duplicates (rate 0.05) | stats | 100.0% | 41.2% | 100.0% / 0.646% | 172,130 | $0.0001 | 4.0 |
+| p07 Null spike in one agency (rate 0.3) | rules | 100.0% | 100.0% | 100.0% / 1.758% | 796,681 | $0.0000 | 4.0 |
+| p07 Null spike in one agency (rate 0.3) | stats | 100.0% | 100.0% | 10.0% / 0.006% | 798,639 | $0.0000 | 4.0 |
+| p08 Closed date before created date (rate 0.05) | rules | 100.0% | 100.0% | 50.0% / 0.206% | 223,065 | $0.0000 | 4.0 |
+| p08 Closed date before created date (rate 0.05) | stats | 10.0% | 0.0% | 10.0% / 0.002% | 216,089 | $0.0001 | 4.0 |
+| p09 ZIP inconsistent with borough (rate 0.05) | rules | 100.0% | 100.0% | 90.0% / 0.046% | 1,656,490 | $0.0000 | 4.0 |
+| p09 ZIP inconsistent with borough (rate 0.05) | stats | 100.0% | 100.0% | 100.0% / 0.070% | 2,848,321 | $0.0000 | 4.0 |
+| p10 Complaint Type inconsistent with Descriptor (rate 0.05) | rules | 100.0% | 100.0% | 100.0% / 48.764% | 1,625,070 | $0.0000 | 4.0 |
+| p10 Complaint Type inconsistent with Descriptor (rate 0.05) | stats | 100.0% | 99.7% | 100.0% / 2.246% | 1,608,767 | $0.0000 | 4.0 |
+| p11 Resolution Description contradicts Status (rate 0.05) | rules | 100.0% | 100.0% | 50.0% / 0.012% | 63,358 | $0.0002 | 4.0 |
+| p11 Resolution Description contradicts Status (rate 0.05) | stats | 100.0% | 0.8% | 100.0% / 0.568% | 45,226 | $0.0002 | 4.0 |
+| p12 Personal data in free text (rate 0.05) | rules | 100.0% | 83.9% | 100.0% / 3.120% | 48,343 | $0.0002 | 4.0 |
+| p12 Personal data in free text (rate 0.05) | stats | 100.0% | 1.4% | 30.0% / 0.008% | 71,270 | $0.0002 | 4.0 |
 
 LLM: projected $0.40 per M rows for a 40-row sample per 5,000-row batch; **$45 per M rows to review every row** (vs CPU rules/stats ~$0.0001-0.001).
 
@@ -71,9 +71,9 @@ LLM: projected $0.40 per M rows for a 40-row sample per 5,000-row batch; **$45 p
 | p11 | rules | True | 100.0% | p06, p08, p09, p10, p12 |
 | p12 | rules | True | 83.2% | p06, p09, p10, p11 |
 
-Clean batches: 44 spurious problem-alerts over 8 batches (5.50/batch) - almost all from the near-duplicate check firing on legit repeat complaints; a batch-level minimum-count threshold is the next fix. Cheap stage: 13,950 rows/s, $0.0008/M rows. LLM stage: 1 call per batch, ~9399 prompt tokens, projected $0.74/M rows (not_run (cost projected from real prompts; 350 output tokens assumed)).
+Clean batches: 44 spurious problem-alerts over 8 batches (5.50/batch) - almost all from the near-duplicate check firing on legit repeat complaints; a batch-level minimum-count threshold is the next fix. Cheap stage: 18,887 rows/s, $0.0006/M rows. LLM stage: 1 call per batch, ~9399 prompt tokens, projected $0.74/M rows (not_run (cost projected from real prompts; 350 output tokens assumed)).
 
 ## Task 6 - scale and design (50M rows/day, 120 customers)
-* Cheap stage: 1.00 core-hours/day = $0.04/day. Daily baseline refit for 120 customers: 0.12 core-hours.
+* Cheap stage: 0.74 core-hours/day = $0.03/day. Daily baseline refit for 120 customers: 0.09 core-hours.
 * LLM: hybrid sampling = 10,000 calls/day, ~$37/day; reviewing every row = ~$2,259/day. Free tier cannot serve this; need paid quota or a smaller self-hosted model, with ~21 calls/min peak.
 * What changes at scale: (1) per-customer schema mapping becomes an LLM-once-per-customer onboarding step (120 calls) that emits column maps and per-customer rule configs reviewed by a human; (2) thresholds (null rate, repeat-gap, zip map) must be learned per customer, not global; (3) switch to streaming micro-batches with vectorised/columnar engines (Arrow/Polars) and horizontal sharding by customer; (4) LLM only on gated rows, with caching of identical row-templates and a hard per-customer budget; (5) alert de-duplication/batch-level minimum counts to control alert fatigue; (6) rules for structural problems (p01-p05, p08, p09) stay rules - they were 100% and cheapest.
