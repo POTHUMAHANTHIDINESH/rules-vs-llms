@@ -1,0 +1,207 @@
+{
+ "fy": "2025-26",
+ "cess_pct": 4,
+ "round_taxable_to": 10,
+ "round_tax_to": 10,
+ "regimes": {
+  "old": {
+   "standard_deduction": 50000,
+   "hra": {
+    "clause": "S10_13A",
+    "metro_pct": 50,
+    "nonmetro_pct": 40,
+    "rent_over_basic_pct": 10
+   },
+   "deductions": [
+    {
+     "id": "S80C",
+     "type": "capped",
+     "field": "sec_80c",
+     "cap": 150000,
+     "clause": "S80C"
+    },
+    {
+     "id": "S80CCD1B",
+     "type": "capped",
+     "field": "sec_80ccd1b",
+     "cap": 50000,
+     "clause": "S80CCD1B"
+    },
+    {
+     "id": "S80D",
+     "type": "health",
+     "self_field": "sec_80d_self",
+     "self_cap": 25000,
+     "self_cap_senior": 50000,
+     "parents_field": "sec_80d_parents",
+     "parents_cap": 25000,
+     "parents_cap_senior": 50000,
+     "senior_age": 60,
+     "clause": "S80D"
+    },
+    {
+     "id": "S24b",
+     "type": "capped",
+     "field": "home_loan_interest",
+     "cap": 200000,
+     "clause": "S24b"
+    }
+   ],
+   "slab_tables": {
+    "general": [
+     {
+      "upto": 250000,
+      "rate": 0
+     },
+     {
+      "upto": 500000,
+      "rate": 5
+     },
+     {
+      "upto": 1000000,
+      "rate": 20
+     },
+     {
+      "upto": null,
+      "rate": 30
+     }
+    ],
+    "senior": [
+     {
+      "upto": 300000,
+      "rate": 0
+     },
+     {
+      "upto": 500000,
+      "rate": 5
+     },
+     {
+      "upto": 1000000,
+      "rate": 20
+     },
+     {
+      "upto": null,
+      "rate": 30
+     }
+    ],
+    "super_senior": [
+     {
+      "upto": 500000,
+      "rate": 0
+     },
+     {
+      "upto": 1000000,
+      "rate": 20
+     },
+     {
+      "upto": null,
+      "rate": 30
+     }
+    ]
+   },
+   "slab_selection": [
+    {
+     "min_age": 80,
+     "table": "super_senior"
+    },
+    {
+     "min_age": 60,
+     "table": "senior"
+    },
+    {
+     "min_age": 0,
+     "table": "general"
+    }
+   ],
+   "slab_clause": "SLAB_OLD",
+   "rebate": {
+    "clause": "S87A",
+    "income_limit": 500000,
+    "max": 12500,
+    "marginal_relief": false
+   },
+   "surcharge": [
+    {
+     "above": 5000000,
+     "rate": 10
+    },
+    {
+     "above": 10000000,
+     "rate": 15
+    },
+    {
+     "above": 20000000,
+     "rate": 25
+    },
+    {
+     "above": 50000000,
+     "rate": 37
+    }
+   ]
+  },
+  "new": {
+   "standard_deduction": 75000,
+   "hra": null,
+   "deductions": [],
+   "slab_tables": {
+    "general": [
+     {
+      "upto": 400000,
+      "rate": 0
+     },
+     {
+      "upto": 800000,
+      "rate": 5
+     },
+     {
+      "upto": 1200000,
+      "rate": 10
+     },
+     {
+      "upto": 1600000,
+      "rate": 15
+     },
+     {
+      "upto": 2000000,
+      "rate": 20
+     },
+     {
+      "upto": 2400000,
+      "rate": 25
+     },
+     {
+      "upto": null,
+      "rate": 30
+     }
+    ]
+   },
+   "slab_selection": [
+    {
+     "min_age": 0,
+     "table": "general"
+    }
+   ],
+   "slab_clause": "SLAB_NEW",
+   "rebate": {
+    "clause": "S87A",
+    "income_limit": 1200000,
+    "max": 60000,
+    "marginal_relief": true
+   },
+   "surcharge": [
+    {
+     "above": 5000000,
+     "rate": 10
+    },
+    {
+     "above": 10000000,
+     "rate": 15
+    },
+    {
+     "above": 20000000,
+     "rate": 25
+    }
+   ]
+  }
+ }
+}

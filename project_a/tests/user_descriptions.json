@@ -1,0 +1,582 @@
+[
+ {
+  "id": "u01",
+  "style": "plain",
+  "text": "I'm 28, salary 12 lakh per annum, no investments, no rent, FY 2025-26.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 28,
+   "gross_salary": 1200000,
+   "fy": "2025-26"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u02",
+  "style": "hinglish",
+  "text": "Mera salary 18 lakh hai, umar 35 saal, 80C mein 1.5 lakh, aur koi investment nahi. FY 2024-25",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 35,
+   "gross_salary": 1800000,
+   "sec_80c": 150000,
+   "fy": "2024-25"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u03",
+  "style": "detailed",
+  "text": "I am 42. CTC 25 lpa. Basic is 10 lakh, HRA 4 lakh, I pay 30k rent monthly in Mumbai. 80C 1.5L, NPS 50k, mediclaim self 20k. FY 2025-26",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 42,
+   "gross_salary": 2500000,
+   "basic_salary": 1000000,
+   "hra_received": 400000,
+   "rent_paid": 360000,
+   "metro": true,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 50000,
+   "sec_80d_self": 20000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u04",
+  "style": "terse",
+  "text": "Salary 8,50,000 a year, age 30, nothing else. FY 24-25",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 30,
+   "gross_salary": 850000,
+   "fy": "2024-25"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u05",
+  "style": "hinglish",
+  "text": "main 61 saal ka hoon, pension salary 9 lakh, mediclaim 40k, koi aur deduction nahi, FY 2025-26",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 61,
+   "gross_salary": 900000,
+   "sec_80d_self": 40000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u06",
+  "style": "plain",
+  "text": "Age 34. Annual gross 15,00,000. Home loan interest 1.8 lakh. Paying rent? No.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 34,
+   "gross_salary": 1500000,
+   "home_loan_interest": 180000,
+   "rent_paid": 0
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u07",
+  "style": "monthly",
+  "text": "salary 1,00,000 per month, I am 29 years old, no other deductions",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 29,
+   "gross_salary": 1200000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u08",
+  "style": "detailed",
+  "text": "Earning 75k/month, 31 yrs, living in Bengaluru paying 25k/month rent, basic 37500 per month, HRA 18750 per month, 80C 1 lakh",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 31,
+   "gross_salary": 900000,
+   "basic_salary": 450000,
+   "hra_received": 225000,
+   "rent_paid": 300000,
+   "metro": false,
+   "sec_80c": 100000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u09",
+  "style": "casual",
+  "text": "Hi, I'm 26 and make 6 lakhs a year. No tax saving investments.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 26,
+   "gross_salary": 600000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u10",
+  "style": "detailed",
+  "text": "Annual salary Rs. 45 lakh, age 48, 80C 1.5 lakh, NPS 50000, parents' health insurance 30,000 (parents are 66), self 25k. Delhi, rent 2 lakh yearly, basic 18L, HRA 9L. FY 2025-26",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 48,
+   "gross_salary": 4500000,
+   "basic_salary": 1800000,
+   "hra_received": 900000,
+   "rent_paid": 200000,
+   "metro": true,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 50000,
+   "sec_80d_self": 25000,
+   "sec_80d_parents": 30000,
+   "parents_senior": true
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u11",
+  "style": "plain",
+  "text": "65 years old retired professor, salary 10 lakh, no deductions, FY 2024-25",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 65,
+   "gross_salary": 1000000,
+   "fy": "2024-25"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u12",
+  "style": "keyvalue",
+  "text": "Salary: ₹14,40,000 p.a.; age: 38; 80C: ₹1,50,000; 80D: ₹25,000; Home loan interest ₹2,00,000",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 38,
+   "gross_salary": 1440000,
+   "sec_80c": 150000,
+   "sec_80d_self": 25000,
+   "home_loan_interest": 200000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u13",
+  "style": "plain",
+  "text": "I earn 20 lakh. 33 years. FY2025-26. I have home loan interest of 2.5 lakh and invest 1.5 lakh in PPF.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 33,
+   "gross_salary": 2000000,
+   "home_loan_interest": 250000,
+   "sec_80c": 150000,
+   "fy": "2025-26"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u14",
+  "style": "hinglish",
+  "text": "Bhai mera package 30 lpa hai, age 27, kuch investment nahi, kiraya nahi dete, FY 2025-26",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 27,
+   "gross_salary": 3000000,
+   "rent_paid": 0
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u15",
+  "style": "terse",
+  "text": "Age 52; gross salary 60,00,000; 80C 1.5L; NPS 50k; no rent, no loan, no health insurance",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 52,
+   "gross_salary": 6000000,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 50000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u16",
+  "style": "plain",
+  "text": "Salary 1.2 crore per year, I'm 45, nothing else",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 45,
+   "gross_salary": 12000000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u17",
+  "style": "plain",
+  "text": "gross salary 11.5L. 36 yo. LIC 50k, ELSS 50k, PPF 50k.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 36,
+   "gross_salary": 1150000,
+   "sec_80c": 150000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u18",
+  "style": "plain",
+  "text": "I'm 80 years old, pension 7 lakh a year, no investments",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 80,
+   "gross_salary": 700000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u19",
+  "style": "detailed",
+  "text": "Age 29, salary 9L, rent 15k/month in Pune, HRA received 3L, basic 4.5L, no other deductions",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 29,
+   "gross_salary": 900000,
+   "rent_paid": 180000,
+   "hra_received": 300000,
+   "basic_salary": 450000,
+   "metro": false
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u20",
+  "style": "detailed",
+  "text": "My monthly salary is 2.5 lakh, age 40, I pay rent 60k per month in Chennai, HRA 1 lakh per month, basic 1.25 lakh per month, 80C full, NPS 50k",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 40,
+   "gross_salary": 3000000,
+   "rent_paid": 720000,
+   "hra_received": 1200000,
+   "basic_salary": 1500000,
+   "metro": true,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 50000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u21",
+  "style": "terse",
+  "text": "Income 5.5 lakh, age 24, FY 2025-26, no deductions",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 24,
+   "gross_salary": 550000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u22",
+  "style": "hinglish",
+  "text": "37 saal, tankhwah 16 lakh saal ka, 80C 1.5 lakh, mediclaim 20000, FY 2024-25, aur kuch nahi",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 37,
+   "gross_salary": 1600000,
+   "sec_80c": 150000,
+   "sec_80d_self": 20000,
+   "fy": "2024-25"
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u23",
+  "style": "run-on",
+  "text": "salary 22 lakh/year age 41 homeloan interest 2 lakh mediclaim parents 50k (father 72) 80C 1.5L FY2025-26",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 41,
+   "gross_salary": 2200000,
+   "home_loan_interest": 200000,
+   "sec_80d_parents": 50000,
+   "parents_senior": true,
+   "sec_80c": 150000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u24",
+  "style": "formal",
+  "text": "I am 30 years old with annual income of Rs 10,00,000. None of the deductions apply.",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 30,
+   "gross_salary": 1000000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u25",
+  "style": "plain",
+  "text": "gross 15 lakh age 40 80c 3 lakh",
+  "expected_status": "ready",
+  "expected_inputs": {
+   "age": 40,
+   "gross_salary": 1500000,
+   "sec_80c": 300000
+  },
+  "expected_missing": null
+ },
+ {
+  "id": "u26",
+  "style": "incomplete",
+  "text": "I earn 12 lakh. Which regime is better?",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age",
+   "deductions"
+  ]
+ },
+ {
+  "id": "u27",
+  "style": "incomplete",
+  "text": "salary 50000",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age",
+   "deductions",
+   "salary_period"
+  ]
+ },
+ {
+  "id": "u28",
+  "style": "hinglish",
+  "text": "Mera tax kitna banega?",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age",
+   "deductions",
+   "gross_salary"
+  ]
+ },
+ {
+  "id": "u29",
+  "style": "incomplete",
+  "text": "I pay rent of 25k per month and have salary 14 lakh, age 30",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "basic_salary",
+   "city",
+   "hra_received"
+  ]
+ },
+ {
+  "id": "u30",
+  "style": "incomplete",
+  "text": "Salary 20 lakh, 80C 1.5 lakh",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age"
+  ]
+ },
+ {
+  "id": "u31",
+  "style": "incomplete",
+  "text": "I'm a senior citizen with 9 lakh pension, 80D 50k",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age"
+  ]
+ },
+ {
+  "id": "u32",
+  "style": "incomplete",
+  "text": "age 35, take-home is 80k, FY 2025-26",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "deductions",
+   "gross_salary"
+  ]
+ },
+ {
+  "id": "u33",
+  "style": "incomplete",
+  "text": "Salary 18 lakh, age 33, I live in Mumbai on rent",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "basic_salary",
+   "hra_received",
+   "rent_paid"
+  ]
+ },
+ {
+  "id": "u34",
+  "style": "incomplete",
+  "text": "I got HRA 3 lakh, salary 15 lakh, age 29, no other deductions",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "basic_salary",
+   "city",
+   "rent_paid"
+  ]
+ },
+ {
+  "id": "u35",
+  "style": "incomplete",
+  "text": "ctc 24 lpa, married, 2 kids, FY 2025-26",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age",
+   "deductions"
+  ]
+ },
+ {
+  "id": "u36",
+  "style": "incomplete",
+  "text": "I invest in PPF and also pay mediclaim. salary 13 lakh, age 38",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "sec_80c_amount",
+   "sec_80d_self"
+  ]
+ },
+ {
+  "id": "u37",
+  "style": "hinglish",
+  "text": "12 lakh salary hai, FY 2025-26, umar 45, parents ko health insurance hai",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "parents_senior",
+   "sec_80d_parents"
+  ]
+ },
+ {
+  "id": "u38",
+  "style": "incomplete",
+  "text": "salary 2 crore, age 50",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "deductions"
+  ]
+ },
+ {
+  "id": "u39",
+  "style": "incomplete",
+  "text": "I make 30 lakh a year, work in Bangalore, rent 40k",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "age",
+   "basic_salary",
+   "hra_received",
+   "rent_period"
+  ]
+ },
+ {
+  "id": "u40",
+  "style": "incomplete",
+  "text": "Salary 7 lakh, age 26. Do I need to pay any tax?",
+  "expected_status": "needs_clarification",
+  "expected_inputs": {},
+  "expected_missing": [
+   "deductions"
+  ]
+ },
+ {
+  "id": "u41",
+  "style": "contradictory",
+  "text": "I'm 28 years old and a senior citizen, salary 10 lakh, no investments",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u42",
+  "style": "contradictory",
+  "text": "Salary 12 lakh a year, which is 50k per month, age 30, no deductions",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u43",
+  "style": "contradictory",
+  "text": "I don't pay any rent but my rent is 20k per month in Delhi, salary 14 lakh age 31",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u44",
+  "style": "contradictory",
+  "text": "Basic salary 12 lakh, gross salary 8 lakh, age 30, no deductions",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u45",
+  "style": "contradictory",
+  "text": "I am 30 years old. Age: 45. Salary 10 lakh, no deductions",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u46",
+  "style": "contradictory",
+  "text": "Salary 10 lakh, age 35, no deductions but 80C 1.5 lakh",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u47",
+  "style": "contradictory",
+  "text": "I'm 17, salary 5 lakh, no deductions",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u48",
+  "style": "contradictory",
+  "text": "Salary 12 lakh, also salary 16 lakh, age 35, nothing else",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u49",
+  "style": "contradictory",
+  "text": "Delhi is non-metro for HRA, rent 3L per year, basic 6L, HRA 2L, salary 12L, age 30",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ },
+ {
+  "id": "u50",
+  "style": "contradictory",
+  "text": "HRA 5 lakh, basic 3 lakh, salary 6 lakh, rent 4 lakh, age 30, Delhi",
+  "expected_status": "conflict",
+  "expected_inputs": {},
+  "expected_missing": null
+ }
+]

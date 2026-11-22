@@ -1,0 +1,9253 @@
+[
+ {
+  "id": "hand-new24-12L",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1275000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225000,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200000,
+    "tax_payable": 83200
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new25-12L-rebate",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1275000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225000,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200000,
+    "tax_payable": 0
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new25-marginal",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1276000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1226000,
+    "tax_payable": 187510
+   },
+   "new": {
+    "taxable_income": 1201000,
+    "tax_payable": 1040
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new24-7L-rebate",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 775000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 725000,
+    "tax_payable": 59800
+   },
+   "new": {
+    "taxable_income": 700000,
+    "tax_payable": 0
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new24-marginal-10",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 775010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 725010,
+    "tax_payable": 59800
+   },
+   "new": {
+    "taxable_income": 700010,
+    "tax_payable": 10
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new24-50L",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025000,
+    "tax_payable": 1391000
+   },
+   "new": {
+    "taxable_income": 5000000,
+    "tax_payable": 1237600
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-new24-50L+10-sc-relief",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025010,
+    "tax_payable": 1391010
+   },
+   "new": {
+    "taxable_income": 5000010,
+    "tax_payable": 1237610
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-old-5L-rebate",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-old-5L+10",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 560010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 510010,
+    "tax_payable": 15080
+   },
+   "new": {
+    "taxable_income": 485010,
+    "tax_payable": 0
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "hand-old-hra",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 300000,
+   "rent_paid": 360000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "hand+oracle"
+ },
+ {
+  "id": "edge-2024-25-new-0",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 75000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 25000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-10",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 75010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 25010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 10,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-250000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 325000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 250000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-299990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 374990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 324990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 299990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-300000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 375000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-300010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 375010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 325010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 300010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-500000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 575000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 525000,
+    "tax_payable": 18200
+   },
+   "new": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-504990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 579990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 529990,
+    "tax_payable": 19240
+   },
+   "new": {
+    "taxable_income": 504990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-505000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 580000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 530000,
+    "tax_payable": 19240
+   },
+   "new": {
+    "taxable_income": 505000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-699990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 774990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 724990,
+    "tax_payable": 59800
+   },
+   "new": {
+    "taxable_income": 699990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-700000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 775000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 725000,
+    "tax_payable": 59800
+   },
+   "new": {
+    "taxable_income": 700000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-700010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 775010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 725010,
+    "tax_payable": 59800
+   },
+   "new": {
+    "taxable_income": 700010,
+    "tax_payable": 10
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-701010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 776010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 726010,
+    "tax_payable": 60010
+   },
+   "new": {
+    "taxable_income": 701010,
+    "tax_payable": 1050
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-740000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 815000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 765000,
+    "tax_payable": 68120
+   },
+   "new": {
+    "taxable_income": 740000,
+    "tax_payable": 24960
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-800000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 875000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 825000,
+    "tax_payable": 80600
+   },
+   "new": {
+    "taxable_income": 800000,
+    "tax_payable": 31200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1024990,
+    "tax_payable": 124800
+   },
+   "new": {
+    "taxable_income": 999990,
+    "tax_payable": 52000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1025000,
+    "tax_payable": 124800
+   },
+   "new": {
+    "taxable_income": 1000000,
+    "tax_payable": 52000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1025010,
+    "tax_payable": 124800
+   },
+   "new": {
+    "taxable_income": 1000010,
+    "tax_payable": 52000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1199990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1274990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1224990,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1199990,
+    "tax_payable": 83200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1200000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1275000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225000,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200000,
+    "tax_payable": 83200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1200010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1275010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225010,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200010,
+    "tax_payable": 83200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1499990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1574990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1524990,
+    "tax_payable": 280800
+   },
+   "new": {
+    "taxable_income": 1499990,
+    "tax_payable": 145600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1500000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1575000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1525000,
+    "tax_payable": 280800
+   },
+   "new": {
+    "taxable_income": 1500000,
+    "tax_payable": 145600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-1500010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1575010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1525010,
+    "tax_payable": 280800
+   },
+   "new": {
+    "taxable_income": 1500010,
+    "tax_payable": 145600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-4999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5024990,
+    "tax_payable": 1390990
+   },
+   "new": {
+    "taxable_income": 4999990,
+    "tax_payable": 1237600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-5000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025000,
+    "tax_payable": 1391000
+   },
+   "new": {
+    "taxable_income": 5000000,
+    "tax_payable": 1237600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-5000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025010,
+    "tax_payable": 1391010
+   },
+   "new": {
+    "taxable_income": 5000010,
+    "tax_payable": 1237610
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-5001000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5026000,
+    "tax_payable": 1392040
+   },
+   "new": {
+    "taxable_income": 5001000,
+    "tax_payable": 1238640
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-5100000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5125000,
+    "tax_payable": 1495000
+   },
+   "new": {
+    "taxable_income": 5100000,
+    "tax_payable": 1341600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-9999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10024990,
+    "tax_payable": 3243490
+   },
+   "new": {
+    "taxable_income": 9999990,
+    "tax_payable": 3077360
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-10000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10025000,
+    "tax_payable": 3243500
+   },
+   "new": {
+    "taxable_income": 10000000,
+    "tax_payable": 3077360
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-10000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10025010,
+    "tax_payable": 3243510
+   },
+   "new": {
+    "taxable_income": 10000010,
+    "tax_payable": 3077370
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-10001000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10026000,
+    "tax_payable": 3244540
+   },
+   "new": {
+    "taxable_income": 10001000,
+    "tax_payable": 3078400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-10100000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10125000,
+    "tax_payable": 3347500
+   },
+   "new": {
+    "taxable_income": 10100000,
+    "tax_payable": 3181360
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-19999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 20074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20024990,
+    "tax_payable": 6977740
+   },
+   "new": {
+    "taxable_income": 19999990,
+    "tax_payable": 6805240
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-20000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 20075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20025000,
+    "tax_payable": 6977750
+   },
+   "new": {
+    "taxable_income": 20000000,
+    "tax_payable": 6805240
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-20000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 20075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20025010,
+    "tax_payable": 6977760
+   },
+   "new": {
+    "taxable_income": 20000010,
+    "tax_payable": 6805250
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-20001000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 20076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20026000,
+    "tax_payable": 6978790
+   },
+   "new": {
+    "taxable_income": 20001000,
+    "tax_payable": 6806280
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-20100000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 20175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20125000,
+    "tax_payable": 7081750
+   },
+   "new": {
+    "taxable_income": 20100000,
+    "tax_payable": 6909240
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-49999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 50074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50024990,
+    "tax_payable": 19282240
+   },
+   "new": {
+    "taxable_income": 49999990,
+    "tax_payable": 19097000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-50000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 50075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50025000,
+    "tax_payable": 19282250
+   },
+   "new": {
+    "taxable_income": 50000000,
+    "tax_payable": 19097000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-50000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 50075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50025010,
+    "tax_payable": 19282260
+   },
+   "new": {
+    "taxable_income": 50000010,
+    "tax_payable": 19097000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-50001000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 50076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50026000,
+    "tax_payable": 19283290
+   },
+   "new": {
+    "taxable_income": 50001000,
+    "tax_payable": 19097390
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-new-50100000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 50175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50125000,
+    "tax_payable": 19386250
+   },
+   "new": {
+    "taxable_income": 50100000,
+    "tax_payable": 19136000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-249990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 299990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 249990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 224990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-250000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 300000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 250000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 225000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-250010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 300010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 250010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 225010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-299990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 349990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 299990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 274990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-300000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-300010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 350010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-499990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 549990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 499990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 474990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-500000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-500010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 550010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500010,
+    "tax_payable": 13000
+   },
+   "new": {
+    "taxable_income": 475010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 999990,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 974990,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-1000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-1000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000010,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975010,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-4999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 4999990,
+    "tax_payable": 1365000
+   },
+   "new": {
+    "taxable_income": 4974990,
+    "tax_payable": 1229800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-5000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5000000,
+    "tax_payable": 1365000
+   },
+   "new": {
+    "taxable_income": 4975000,
+    "tax_payable": 1229800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-5000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 5050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5000010,
+    "tax_payable": 1365010
+   },
+   "new": {
+    "taxable_income": 4975010,
+    "tax_payable": 1229800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-9999990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 9999990,
+    "tax_payable": 3217500
+   },
+   "new": {
+    "taxable_income": 9974990,
+    "tax_payable": 3068780
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-10000000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10000000,
+    "tax_payable": 3217500
+   },
+   "new": {
+    "taxable_income": 9975000,
+    "tax_payable": 3068780
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2024-25-old-10000010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 10050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10000010,
+    "tax_payable": 3217510
+   },
+   "new": {
+    "taxable_income": 9975010,
+    "tax_payable": 3068780
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-59-350000",
+  "input": {
+   "fy": "2024-25",
+   "age": 59,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-59-400000",
+  "input": {
+   "fy": "2024-25",
+   "age": 59,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-59-550000",
+  "input": {
+   "fy": "2024-25",
+   "age": 59,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-59-600000",
+  "input": {
+   "fy": "2024-25",
+   "age": 59,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 23400
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-59-1050000",
+  "input": {
+   "fy": "2024-25",
+   "age": 59,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-60-350000",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-60-400000",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-60-550000",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-60-600000",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 20800
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-60-1050000",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 114400
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-79-350000",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-79-400000",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-79-550000",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-79-600000",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 20800
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-79-1050000",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 114400
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-80-350000",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-80-400000",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-80-550000",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-80-600000",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 10400
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2024-25-80-1050000",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 104000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 49400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2024-25-149990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 149990,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200010,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2024-25-150000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200000,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2024-25-150010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 150010,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200000,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2024-25-49990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 49990,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300010,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2024-25-50000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 50000,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300000,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2024-25-50010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 50010,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300000,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2024-25-199990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 199990
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150010,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2024-25-200000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 200000
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2024-25-200010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 200010
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 109200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-30-False-24990-24990",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 241810
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-30-False-25010-25010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-30-False-50010-50010",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-30-False-0-60000",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1425000,
+    "tax_payable": 249600
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-62-False-24990-24990",
+  "input": {
+   "fy": "2024-25",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 239210
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-62-False-25010-25010",
+  "input": {
+   "fy": "2024-25",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399990,
+    "tax_payable": 239200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-62-False-50010-50010",
+  "input": {
+   "fy": "2024-25",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1375000,
+    "tax_payable": 231400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-62-False-0-60000",
+  "input": {
+   "fy": "2024-25",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1425000,
+    "tax_payable": 247000
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-45-True-24990-24990",
+  "input": {
+   "fy": "2024-25",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 241810
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-45-True-25010-25010",
+  "input": {
+   "fy": "2024-25",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399990,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-45-True-50010-50010",
+  "input": {
+   "fy": "2024-25",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1375000,
+    "tax_payable": 234000
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-45-True-0-60000",
+  "input": {
+   "fy": "2024-25",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-65-True-24990-24990",
+  "input": {
+   "fy": "2024-25",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 239210
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-65-True-25010-25010",
+  "input": {
+   "fy": "2024-25",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399980,
+    "tax_payable": 239190
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-65-True-50010-50010",
+  "input": {
+   "fy": "2024-25",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 223600
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2024-25-65-True-0-60000",
+  "input": {
+   "fy": "2024-25",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 239200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-True-actual",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 400000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 226200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-True-rent-minus-10pct",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 300000,
+   "rent_paid": 200000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1310000,
+    "tax_payable": 213720
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-True-pct-of-basic",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 400000,
+   "rent_paid": 600000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-True-no-rent",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 200000,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-True-rent-below-10pct",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 50000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-False-actual",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 400000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 226200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-False-rent-minus-10pct",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 300000,
+   "rent_paid": 200000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1310000,
+    "tax_payable": 213720
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-False-pct-of-basic",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 400000,
+   "rent_paid": 600000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1210000,
+    "tax_payable": 182520
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-False-no-rent",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 200000,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2024-25-False-rent-below-10pct",
+  "input": {
+   "fy": "2024-25",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 50000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 130000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-127",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 36223261,
+   "basic_salary": 3443921,
+   "hra_received": 1854133,
+   "rent_paid": 630226,
+   "metro": false,
+   "sec_80c": 143605,
+   "sec_80ccd1b": 64343,
+   "sec_80d_self": 49219,
+   "sec_80d_parents": 50664,
+   "parents_senior": false,
+   "home_loan_interest": 125794
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 35493810,
+    "tax_payable": 13595590
+   },
+   "new": {
+    "taxable_income": 36148260,
+    "tax_payable": 13694820
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-128",
+  "input": {
+   "fy": "2024-25",
+   "age": 22,
+   "gross_salary": 738579,
+   "basic_salary": 51407,
+   "hra_received": 14734,
+   "rent_paid": 854340,
+   "metro": false,
+   "sec_80c": 55109,
+   "sec_80ccd1b": 52064,
+   "sec_80d_self": 16483,
+   "sec_80d_parents": 22784,
+   "parents_senior": false,
+   "home_loan_interest": 186980
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 342490,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 663580,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-129",
+  "input": {
+   "fy": "2024-25",
+   "age": 66,
+   "gross_salary": 394625,
+   "basic_salary": 146132,
+   "hra_received": 70525,
+   "rent_paid": 301572,
+   "metro": true,
+   "sec_80c": 169029,
+   "sec_80ccd1b": 40501,
+   "sec_80d_self": 1621,
+   "sec_80d_parents": 55561,
+   "parents_senior": false,
+   "home_loan_interest": 190600
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 319630,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-130",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 2170908,
+   "basic_salary": 1045336,
+   "hra_received": 122104,
+   "rent_paid": 530955,
+   "metro": true,
+   "sec_80c": 137534,
+   "sec_80ccd1b": 33900,
+   "sec_80d_self": 55343,
+   "sec_80d_parents": 27522,
+   "parents_senior": false,
+   "home_loan_interest": 251233
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1552370,
+    "tax_payable": 276340
+   },
+   "new": {
+    "taxable_income": 2095910,
+    "tax_payable": 331520
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-131",
+  "input": {
+   "fy": "2024-25",
+   "age": 35,
+   "gross_salary": 537866,
+   "basic_salary": 25631,
+   "hra_received": 11545,
+   "rent_paid": 752151,
+   "metro": true,
+   "sec_80c": 126383,
+   "sec_80ccd1b": 30005,
+   "sec_80d_self": 55681,
+   "sec_80d_parents": 58059,
+   "parents_senior": true,
+   "home_loan_interest": 239492
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 44930,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 462870,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-132",
+  "input": {
+   "fy": "2024-25",
+   "age": 88,
+   "gross_salary": 29483153,
+   "basic_salary": 5161129,
+   "hra_received": 2299101,
+   "rent_paid": 843992,
+   "metro": true,
+   "sec_80c": 77168,
+   "sec_80ccd1b": 35263,
+   "sec_80d_self": 607,
+   "sec_80d_parents": 2169,
+   "parents_senior": true,
+   "home_loan_interest": 240243
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 28790070,
+    "tax_payable": 10968130
+   },
+   "new": {
+    "taxable_income": 29408150,
+    "tax_payable": 11066180
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-133",
+  "input": {
+   "fy": "2024-25",
+   "age": 88,
+   "gross_salary": 548288,
+   "basic_salary": 136372,
+   "hra_received": 63644,
+   "rent_paid": 536102,
+   "metro": false,
+   "sec_80c": 146233,
+   "sec_80ccd1b": 4406,
+   "sec_80d_self": 54486,
+   "sec_80d_parents": 19009,
+   "parents_senior": true,
+   "home_loan_interest": 51576
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 172520,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 473290,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-134",
+  "input": {
+   "fy": "2024-25",
+   "age": 35,
+   "gross_salary": 459749,
+   "basic_salary": 111614,
+   "hra_received": 62802,
+   "rent_paid": 680052,
+   "metro": false,
+   "sec_80c": 97027,
+   "sec_80ccd1b": 12669,
+   "sec_80d_self": 12752,
+   "sec_80d_parents": 48991,
+   "parents_senior": false,
+   "home_loan_interest": 76734
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 140920,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 384750,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-135",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 471224,
+   "basic_salary": 118287,
+   "hra_received": 10887,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 197094,
+   "sec_80ccd1b": 35197,
+   "sec_80d_self": 43809,
+   "sec_80d_parents": 49654,
+   "parents_senior": false,
+   "home_loan_interest": 81139
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 86080,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 396220,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-136",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 35516817,
+   "basic_salary": 4525304,
+   "hra_received": 2289266,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 181546,
+   "sec_80ccd1b": 66154,
+   "sec_80d_self": 19050,
+   "sec_80d_parents": 5533,
+   "parents_senior": true,
+   "home_loan_interest": 83949
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 35158290,
+    "tax_payable": 13464730
+   },
+   "new": {
+    "taxable_income": 35441820,
+    "tax_payable": 13419310
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-137",
+  "input": {
+   "fy": "2024-25",
+   "age": 52,
+   "gross_salary": 1683475,
+   "basic_salary": 409371,
+   "hra_received": 211811,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 27822,
+   "sec_80ccd1b": 51032,
+   "sec_80d_self": 58180,
+   "sec_80d_parents": 4812,
+   "parents_senior": true,
+   "home_loan_interest": 181937
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1343900,
+    "tax_payable": 224300
+   },
+   "new": {
+    "taxable_income": 1608480,
+    "tax_payable": 179450
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-138",
+  "input": {
+   "fy": "2024-25",
+   "age": 66,
+   "gross_salary": 4216798,
+   "basic_salary": 1996591,
+   "hra_received": 687362,
+   "rent_paid": 472006,
+   "metro": false,
+   "sec_80c": 130434,
+   "sec_80ccd1b": 61155,
+   "sec_80d_self": 37461,
+   "sec_80d_parents": 40540,
+   "parents_senior": false,
+   "home_loan_interest": 80682
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 3570870,
+    "tax_payable": 916510
+   },
+   "new": {
+    "taxable_income": 4141800,
+    "tax_payable": 969840
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-139",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 31598911,
+   "basic_salary": 5644171,
+   "hra_received": 1924419,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 8952,
+   "sec_80ccd1b": 25623,
+   "sec_80d_self": 42416,
+   "sec_80d_parents": 11361,
+   "parents_senior": true,
+   "home_loan_interest": 285614
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 31260560,
+    "tax_payable": 11944620
+   },
+   "new": {
+    "taxable_income": 31523910,
+    "tax_payable": 11891330
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-140",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 2295074,
+   "basic_salary": 42928,
+   "hra_received": 4231,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 48760,
+   "sec_80ccd1b": 51114,
+   "sec_80d_self": 17878,
+   "sec_80d_parents": 27876,
+   "parents_senior": false,
+   "home_loan_interest": 41239
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2062200,
+    "tax_payable": 445810
+   },
+   "new": {
+    "taxable_income": 2220070,
+    "tax_payable": 370260
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-141",
+  "input": {
+   "fy": "2024-25",
+   "age": 88,
+   "gross_salary": 1678882,
+   "basic_salary": 183180,
+   "hra_received": 34530,
+   "rent_paid": 521773,
+   "metro": true,
+   "sec_80c": 46389,
+   "sec_80ccd1b": 42701,
+   "sec_80d_self": 34035,
+   "sec_80d_parents": 31591,
+   "parents_senior": true,
+   "home_loan_interest": 276431
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1239640,
+    "tax_payable": 178770
+   },
+   "new": {
+    "taxable_income": 1603880,
+    "tax_payable": 178010
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-142",
+  "input": {
+   "fy": "2024-25",
+   "age": 35,
+   "gross_salary": 550186,
+   "basic_salary": 121286,
+   "hra_received": 643,
+   "rent_paid": 476172,
+   "metro": true,
+   "sec_80c": 205341,
+   "sec_80ccd1b": 23914,
+   "sec_80d_self": 1781,
+   "sec_80d_parents": 23065,
+   "parents_senior": false,
+   "home_loan_interest": 184392
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 116390,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475190,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-143",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 9861406,
+   "basic_salary": 2352771,
+   "hra_received": 1165596,
+   "rent_paid": 597515,
+   "metro": false,
+   "sec_80c": 175717,
+   "sec_80ccd1b": 17382,
+   "sec_80d_self": 6649,
+   "sec_80d_parents": 51219,
+   "parents_senior": true,
+   "home_loan_interest": 228617
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 9025140,
+    "tax_payable": 2880070
+   },
+   "new": {
+    "taxable_income": 9786410,
+    "tax_payable": 3004060
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-144",
+  "input": {
+   "fy": "2024-25",
+   "age": 52,
+   "gross_salary": 844746,
+   "basic_salary": 378723,
+   "hra_received": 210322,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 72557,
+   "sec_80ccd1b": 8377,
+   "sec_80d_self": 19073,
+   "sec_80d_parents": 20617,
+   "parents_senior": true,
+   "home_loan_interest": 134282
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 539840,
+    "tax_payable": 21290
+   },
+   "new": {
+    "taxable_income": 769750,
+    "tax_payable": 28050
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-145",
+  "input": {
+   "fy": "2024-25",
+   "age": 22,
+   "gross_salary": 458177,
+   "basic_salary": 108666,
+   "hra_received": 63270,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 81243,
+   "sec_80ccd1b": 16124,
+   "sec_80d_self": 6151,
+   "sec_80d_parents": 44946,
+   "parents_senior": false,
+   "home_loan_interest": 183661
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 96000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 383180,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-146",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 2312790,
+   "basic_salary": 662833,
+   "hra_received": 318654,
+   "rent_paid": 622914,
+   "metro": true,
+   "sec_80c": 177188,
+   "sec_80ccd1b": 15655,
+   "sec_80d_self": 44988,
+   "sec_80d_parents": 24520,
+   "parents_senior": false,
+   "home_loan_interest": 131899
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1577070,
+    "tax_payable": 294450
+   },
+   "new": {
+    "taxable_income": 2237790,
+    "tax_payable": 375790
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-147",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 407945,
+   "basic_salary": 192777,
+   "hra_received": 93739,
+   "rent_paid": 24812,
+   "metro": false,
+   "sec_80c": 75905,
+   "sec_80ccd1b": 16032,
+   "sec_80d_self": 19460,
+   "sec_80d_parents": 50324,
+   "parents_senior": true,
+   "home_loan_interest": 10627
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 180390,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 332950,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-148",
+  "input": {
+   "fy": "2024-25",
+   "age": 52,
+   "gross_salary": 15750530,
+   "basic_salary": 470979,
+   "hra_received": 59033,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 32946,
+   "sec_80ccd1b": 68496,
+   "sec_80d_self": 23202,
+   "sec_80d_parents": 39121,
+   "parents_senior": false,
+   "home_loan_interest": 158461
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 15410920,
+    "tax_payable": 5305190
+   },
+   "new": {
+    "taxable_income": 15675530,
+    "tax_payable": 5253620
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-149",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 2181614,
+   "basic_salary": 870943,
+   "hra_received": 201382,
+   "rent_paid": 250930,
+   "metro": false,
+   "sec_80c": 203137,
+   "sec_80ccd1b": 16411,
+   "sec_80d_self": 12023,
+   "sec_80d_parents": 35581,
+   "parents_senior": true,
+   "home_loan_interest": 283813
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1553760,
+    "tax_payable": 276770
+   },
+   "new": {
+    "taxable_income": 2106610,
+    "tax_payable": 334860
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-150",
+  "input": {
+   "fy": "2024-25",
+   "age": 22,
+   "gross_salary": 581852,
+   "basic_salary": 119671,
+   "hra_received": 3062,
+   "rent_paid": 290278,
+   "metro": true,
+   "sec_80c": 82508,
+   "sec_80ccd1b": 18174,
+   "sec_80d_self": 41076,
+   "sec_80d_parents": 38905,
+   "parents_senior": true,
+   "home_loan_interest": 94006
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 270200,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 506850,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-151",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 559420,
+   "basic_salary": 178631,
+   "hra_received": 82969,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 63650,
+   "sec_80ccd1b": 61675,
+   "sec_80d_self": 3820,
+   "sec_80d_parents": 14538,
+   "parents_senior": false,
+   "home_loan_interest": 79087
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 298330,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 484420,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-152",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 18103664,
+   "basic_salary": 4626517,
+   "hra_received": 1441531,
+   "rent_paid": 392929,
+   "metro": true,
+   "sec_80c": 119946,
+   "sec_80ccd1b": 62136,
+   "sec_80d_self": 58787,
+   "sec_80d_parents": 51683,
+   "parents_senior": false,
+   "home_loan_interest": 163679
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 17645040,
+    "tax_payable": 6103800
+   },
+   "new": {
+    "taxable_income": 18028660,
+    "tax_payable": 6097920
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-153",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 197029,
+   "basic_salary": 63551,
+   "hra_received": 348,
+   "rent_paid": 853282,
+   "metro": false,
+   "sec_80c": 167540,
+   "sec_80ccd1b": 22619,
+   "sec_80d_self": 5518,
+   "sec_80d_parents": 19597,
+   "parents_senior": true,
+   "home_loan_interest": 138944
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 122030,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-154",
+  "input": {
+   "fy": "2024-25",
+   "age": 22,
+   "gross_salary": 3731611,
+   "basic_salary": 455339,
+   "hra_received": 160804,
+   "rent_paid": 412379,
+   "metro": false,
+   "sec_80c": 135422,
+   "sec_80ccd1b": 20715,
+   "sec_80d_self": 33342,
+   "sec_80d_parents": 6876,
+   "parents_senior": true,
+   "home_loan_interest": 204059
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 3132790,
+    "tax_payable": 782430
+   },
+   "new": {
+    "taxable_income": 3656610,
+    "tax_payable": 818460
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-155",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 349815,
+   "basic_salary": 155378,
+   "hra_received": 86804,
+   "rent_paid": 170090,
+   "metro": true,
+   "sec_80c": 74862,
+   "sec_80ccd1b": 46821,
+   "sec_80d_self": 8782,
+   "sec_80d_parents": 25468,
+   "parents_senior": true,
+   "home_loan_interest": 4953
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 61240,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 274820,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-156",
+  "input": {
+   "fy": "2024-25",
+   "age": 22,
+   "gross_salary": 26367812,
+   "basic_salary": 2866978,
+   "hra_received": 1514102,
+   "rent_paid": 188348,
+   "metro": false,
+   "sec_80c": 42975,
+   "sec_80ccd1b": 3724,
+   "sec_80d_self": 58143,
+   "sec_80d_parents": 7647,
+   "parents_senior": false,
+   "home_loan_interest": 1044
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 26237420,
+    "tax_payable": 9988840
+   },
+   "new": {
+    "taxable_income": 26292810,
+    "tax_payable": 9851200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-157",
+  "input": {
+   "fy": "2024-25",
+   "age": 60,
+   "gross_salary": 666759,
+   "basic_salary": 113346,
+   "hra_received": 20214,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 127025,
+   "sec_80ccd1b": 14076,
+   "sec_80d_self": 57276,
+   "sec_80d_parents": 54865,
+   "parents_senior": false,
+   "home_loan_interest": 199857
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 200800,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 591760,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-158",
+  "input": {
+   "fy": "2024-25",
+   "age": 35,
+   "gross_salary": 1664562,
+   "basic_salary": 497424,
+   "hra_received": 261488,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 179184,
+   "sec_80ccd1b": 59760,
+   "sec_80d_self": 38359,
+   "sec_80d_parents": 22617,
+   "parents_senior": true,
+   "home_loan_interest": 46067
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1320880,
+    "tax_payable": 217120
+   },
+   "new": {
+    "taxable_income": 1589560,
+    "tax_payable": 173540
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-159",
+  "input": {
+   "fy": "2024-25",
+   "age": 79,
+   "gross_salary": 20304249,
+   "basic_salary": 3792454,
+   "hra_received": 706075,
+   "rent_paid": 453610,
+   "metro": true,
+   "sec_80c": 189752,
+   "sec_80ccd1b": 64643,
+   "sec_80d_self": 26415,
+   "sec_80d_parents": 20557,
+   "parents_senior": true,
+   "home_loan_interest": 242749
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 19732910,
+    "tax_payable": 6852930
+   },
+   "new": {
+    "taxable_income": 20229250,
+    "tax_payable": 7043660
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-160",
+  "input": {
+   "fy": "2024-25",
+   "age": 80,
+   "gross_salary": 1861910,
+   "basic_salary": 872018,
+   "hra_received": 421128,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 148522,
+   "sec_80ccd1b": 16722,
+   "sec_80d_self": 28265,
+   "sec_80d_parents": 17539,
+   "parents_senior": true,
+   "home_loan_interest": 61785
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1539080,
+    "tax_payable": 272190
+   },
+   "new": {
+    "taxable_income": 1786910,
+    "tax_payable": 235120
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2024-25-161",
+  "input": {
+   "fy": "2024-25",
+   "age": 66,
+   "gross_salary": 1517596,
+   "basic_salary": 152423,
+   "hra_received": 71449,
+   "rent_paid": 245673,
+   "metro": false,
+   "sec_80c": 147141,
+   "sec_80ccd1b": 16152,
+   "sec_80d_self": 17557,
+   "sec_80d_parents": 19232,
+   "parents_senior": false,
+   "home_loan_interest": 210367
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1006550,
+    "tax_payable": 116440
+   },
+   "new": {
+    "taxable_income": 1442600,
+    "tax_payable": 133660
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-0",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 75000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 25000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-10",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 75010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 25010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 10,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-250000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 325000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 250000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-300000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 375000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-399990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 474990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 424990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 399990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 475000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 425000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 400000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-400010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 475010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 425010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 400010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-500000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 575000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 525000,
+    "tax_payable": 18200
+   },
+   "new": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-504990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 579990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 529990,
+    "tax_payable": 19240
+   },
+   "new": {
+    "taxable_income": 504990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-505000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 580000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 530000,
+    "tax_payable": 19240
+   },
+   "new": {
+    "taxable_income": 505000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-799990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 874990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 824990,
+    "tax_payable": 80600
+   },
+   "new": {
+    "taxable_income": 799990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-800000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 875000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 825000,
+    "tax_payable": 80600
+   },
+   "new": {
+    "taxable_income": 800000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-800010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 875010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 825010,
+    "tax_payable": 80600
+   },
+   "new": {
+    "taxable_income": 800010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1025000,
+    "tax_payable": 124800
+   },
+   "new": {
+    "taxable_income": 1000000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1199990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1274990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1224990,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1199990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1200000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1275000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225000,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1200010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1275010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1225010,
+    "tax_payable": 187200
+   },
+   "new": {
+    "taxable_income": 1200010,
+    "tax_payable": 10
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1201010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1276010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1226010,
+    "tax_payable": 187520
+   },
+   "new": {
+    "taxable_income": 1201010,
+    "tax_payable": 1050
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1240000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1315000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1265000,
+    "tax_payable": 199680
+   },
+   "new": {
+    "taxable_income": 1240000,
+    "tax_payable": 41600
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1300000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1375000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1325000,
+    "tax_payable": 218400
+   },
+   "new": {
+    "taxable_income": 1300000,
+    "tax_payable": 78000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1599990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1674990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1624990,
+    "tax_payable": 312000
+   },
+   "new": {
+    "taxable_income": 1599990,
+    "tax_payable": 124800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1600000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1675000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1625000,
+    "tax_payable": 312000
+   },
+   "new": {
+    "taxable_income": 1600000,
+    "tax_payable": 124800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1600010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1675010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1625010,
+    "tax_payable": 312000
+   },
+   "new": {
+    "taxable_income": 1600010,
+    "tax_payable": 124800
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-1999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2024990,
+    "tax_payable": 436800
+   },
+   "new": {
+    "taxable_income": 1999990,
+    "tax_payable": 208000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-2000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2025000,
+    "tax_payable": 436800
+   },
+   "new": {
+    "taxable_income": 2000000,
+    "tax_payable": 208000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-2000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2025010,
+    "tax_payable": 436800
+   },
+   "new": {
+    "taxable_income": 2000010,
+    "tax_payable": 208000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-2399990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2474990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2424990,
+    "tax_payable": 561600
+   },
+   "new": {
+    "taxable_income": 2399990,
+    "tax_payable": 312000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-2400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2475000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2425000,
+    "tax_payable": 561600
+   },
+   "new": {
+    "taxable_income": 2400000,
+    "tax_payable": 312000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-2400010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 2475010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 2425010,
+    "tax_payable": 561600
+   },
+   "new": {
+    "taxable_income": 2400010,
+    "tax_payable": 312000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-4999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5024990,
+    "tax_payable": 1390990
+   },
+   "new": {
+    "taxable_income": 4999990,
+    "tax_payable": 1123200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-5000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025000,
+    "tax_payable": 1391000
+   },
+   "new": {
+    "taxable_income": 5000000,
+    "tax_payable": 1123200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-5000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5025010,
+    "tax_payable": 1391010
+   },
+   "new": {
+    "taxable_income": 5000010,
+    "tax_payable": 1123210
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-5001000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5026000,
+    "tax_payable": 1392040
+   },
+   "new": {
+    "taxable_income": 5001000,
+    "tax_payable": 1124240
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-5100000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5125000,
+    "tax_payable": 1495000
+   },
+   "new": {
+    "taxable_income": 5100000,
+    "tax_payable": 1227200
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-9999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10024990,
+    "tax_payable": 3243490
+   },
+   "new": {
+    "taxable_income": 9999990,
+    "tax_payable": 2951520
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-10000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10025000,
+    "tax_payable": 3243500
+   },
+   "new": {
+    "taxable_income": 10000000,
+    "tax_payable": 2951520
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-10000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10025010,
+    "tax_payable": 3243510
+   },
+   "new": {
+    "taxable_income": 10000010,
+    "tax_payable": 2951530
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-10001000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10026000,
+    "tax_payable": 3244540
+   },
+   "new": {
+    "taxable_income": 10001000,
+    "tax_payable": 2952560
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-10100000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10125000,
+    "tax_payable": 3347500
+   },
+   "new": {
+    "taxable_income": 10100000,
+    "tax_payable": 3055520
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-19999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 20074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20024990,
+    "tax_payable": 6977740
+   },
+   "new": {
+    "taxable_income": 19999990,
+    "tax_payable": 6673680
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-20000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 20075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20025000,
+    "tax_payable": 6977750
+   },
+   "new": {
+    "taxable_income": 20000000,
+    "tax_payable": 6673680
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-20000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 20075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20025010,
+    "tax_payable": 6977760
+   },
+   "new": {
+    "taxable_income": 20000010,
+    "tax_payable": 6673690
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-20001000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 20076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20026000,
+    "tax_payable": 6978790
+   },
+   "new": {
+    "taxable_income": 20001000,
+    "tax_payable": 6674720
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-20100000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 20175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 20125000,
+    "tax_payable": 7081750
+   },
+   "new": {
+    "taxable_income": 20100000,
+    "tax_payable": 6777680
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-49999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 50074990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50024990,
+    "tax_payable": 19282240
+   },
+   "new": {
+    "taxable_income": 49999990,
+    "tax_payable": 18954000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-50000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 50075000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50025000,
+    "tax_payable": 19282250
+   },
+   "new": {
+    "taxable_income": 50000000,
+    "tax_payable": 18954000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-50000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 50075010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50025010,
+    "tax_payable": 19282260
+   },
+   "new": {
+    "taxable_income": 50000010,
+    "tax_payable": 18954000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-50001000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 50076000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50026000,
+    "tax_payable": 19283290
+   },
+   "new": {
+    "taxable_income": 50001000,
+    "tax_payable": 18954390
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-new-50100000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 50175000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 50125000,
+    "tax_payable": 19386250
+   },
+   "new": {
+    "taxable_income": 50100000,
+    "tax_payable": 18993000
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-249990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 299990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 249990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 224990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-250000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 300000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 250000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 225000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-250010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 300010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 250010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 225010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-299990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 349990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 299990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 274990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-300000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-300010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 350010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300010,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-499990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 549990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 499990,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 474990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-500000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-500010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 550010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500010,
+    "tax_payable": 13000
+   },
+   "new": {
+    "taxable_income": 475010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 999990,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 974990,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-1000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-1000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000010,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975010,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-4999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 4999990,
+    "tax_payable": 1365000
+   },
+   "new": {
+    "taxable_income": 4974990,
+    "tax_payable": 1115400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-5000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5000000,
+    "tax_payable": 1365000
+   },
+   "new": {
+    "taxable_income": 4975000,
+    "tax_payable": 1115400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-5000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 5050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 5000010,
+    "tax_payable": 1365010
+   },
+   "new": {
+    "taxable_income": 4975010,
+    "tax_payable": 1115400
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-9999990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10049990,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 9999990,
+    "tax_payable": 3217500
+   },
+   "new": {
+    "taxable_income": 9974990,
+    "tax_payable": 2942940
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-10000000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10000000,
+    "tax_payable": 3217500
+   },
+   "new": {
+    "taxable_income": 9975000,
+    "tax_payable": 2942940
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "edge-2025-26-old-10000010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 10050010,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 10000010,
+    "tax_payable": 3217510
+   },
+   "new": {
+    "taxable_income": 9975010,
+    "tax_payable": 2942940
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-59-350000",
+  "input": {
+   "fy": "2025-26",
+   "age": 59,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-59-400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 59,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-59-550000",
+  "input": {
+   "fy": "2025-26",
+   "age": 59,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-59-600000",
+  "input": {
+   "fy": "2025-26",
+   "age": 59,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 23400
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-59-1050000",
+  "input": {
+   "fy": "2025-26",
+   "age": 59,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 117000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-60-350000",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-60-400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-60-550000",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-60-600000",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 20800
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-60-1050000",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 114400
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-79-350000",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-79-400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-79-550000",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-79-600000",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 20800
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-79-1050000",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 114400
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-80-350000",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 350000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 300000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 275000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-80-400000",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 350000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 325000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-80-550000",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 550000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 500000,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 475000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-80-600000",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 600000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 550000,
+    "tax_payable": 10400
+   },
+   "new": {
+    "taxable_income": 525000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "age-2025-26-80-1050000",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 1050000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1000000,
+    "tax_payable": 104000
+   },
+   "new": {
+    "taxable_income": 975000,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2025-26-149990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 149990,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200010,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2025-26-150000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 150000,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200000,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80c-2025-26-150010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 150010,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1200000,
+    "tax_payable": 179400
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2025-26-49990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 49990,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300010,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2025-26-50000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 50000,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300000,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80ccd1b-2025-26-50010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 50010,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1300000,
+    "tax_payable": 210600
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2025-26-199990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 199990
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150010,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2025-26-200000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 200000
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "24b-2025-26-200010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1400000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 200010
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1325000,
+    "tax_payable": 81900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-30-False-24990-24990",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 241810
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-30-False-25010-25010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-30-False-50010-50010",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-30-False-0-60000",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1425000,
+    "tax_payable": 249600
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-62-False-24990-24990",
+  "input": {
+   "fy": "2025-26",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 239210
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-62-False-25010-25010",
+  "input": {
+   "fy": "2025-26",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399990,
+    "tax_payable": 239200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-62-False-50010-50010",
+  "input": {
+   "fy": "2025-26",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1375000,
+    "tax_payable": 231400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-62-False-0-60000",
+  "input": {
+   "fy": "2025-26",
+   "age": 62,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1425000,
+    "tax_payable": 247000
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-45-True-24990-24990",
+  "input": {
+   "fy": "2025-26",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 241810
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-45-True-25010-25010",
+  "input": {
+   "fy": "2025-26",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399990,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-45-True-50010-50010",
+  "input": {
+   "fy": "2025-26",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1375000,
+    "tax_payable": 234000
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-45-True-0-60000",
+  "input": {
+   "fy": "2025-26",
+   "age": 45,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 241800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-65-True-24990-24990",
+  "input": {
+   "fy": "2025-26",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 24990,
+   "sec_80d_parents": 24990,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400020,
+    "tax_payable": 239210
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-65-True-25010-25010",
+  "input": {
+   "fy": "2025-26",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 25010,
+   "sec_80d_parents": 25010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1399980,
+    "tax_payable": 239190
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-65-True-50010-50010",
+  "input": {
+   "fy": "2025-26",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 50010,
+   "sec_80d_parents": 50010,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 223600
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "80d-2025-26-65-True-0-60000",
+  "input": {
+   "fy": "2025-26",
+   "age": 65,
+   "gross_salary": 1500000,
+   "basic_salary": null,
+   "hra_received": 0,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 60000,
+   "parents_senior": true,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1400000,
+    "tax_payable": 239200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-True-actual",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 400000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 226200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-True-rent-minus-10pct",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 300000,
+   "rent_paid": 200000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1310000,
+    "tax_payable": 213720
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-True-pct-of-basic",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 400000,
+   "rent_paid": 600000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1150000,
+    "tax_payable": 163800
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-True-no-rent",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 200000,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-True-rent-below-10pct",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 50000,
+   "metro": true,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-False-actual",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 400000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350000,
+    "tax_payable": 226200
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-False-rent-minus-10pct",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 300000,
+   "rent_paid": 200000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1310000,
+    "tax_payable": 213720
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-False-pct-of-basic",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 400000,
+   "rent_paid": 600000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1210000,
+    "tax_payable": 182520
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-False-no-rent",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 200000,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "hra-2025-26-False-rent-below-10pct",
+  "input": {
+   "fy": "2025-26",
+   "age": 30,
+   "gross_salary": 1500000,
+   "basic_salary": 600000,
+   "hra_received": 100000,
+   "rent_paid": 50000,
+   "metro": false,
+   "sec_80c": 0,
+   "sec_80ccd1b": 0,
+   "sec_80d_self": 0,
+   "sec_80d_parents": 0,
+   "parents_senior": false,
+   "home_loan_interest": 0
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1450000,
+    "tax_payable": 257400
+   },
+   "new": {
+    "taxable_income": 1425000,
+    "tax_payable": 97500
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-284",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 39392034,
+   "basic_salary": 11045109,
+   "hra_received": 5654902,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 129678,
+   "sec_80ccd1b": 67723,
+   "sec_80d_self": 13756,
+   "sec_80d_parents": 27815,
+   "parents_senior": true,
+   "home_loan_interest": 173248
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 38947540,
+    "tax_payable": 14929540
+   },
+   "new": {
+    "taxable_income": 39317030,
+    "tax_payable": 14787640
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-285",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 62947,
+   "basic_salary": 8750,
+   "hra_received": 4578,
+   "rent_paid": 136943,
+   "metro": false,
+   "sec_80c": 160356,
+   "sec_80ccd1b": 54345,
+   "sec_80d_self": 54586,
+   "sec_80d_parents": 51000,
+   "parents_senior": false,
+   "home_loan_interest": 253187
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-286",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 355201,
+   "basic_salary": 166794,
+   "hra_received": 15838,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 207288,
+   "sec_80ccd1b": 59917,
+   "sec_80d_self": 33747,
+   "sec_80d_parents": 18147,
+   "parents_senior": false,
+   "home_loan_interest": 193689
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 280200,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-287",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 82824,
+   "basic_salary": 6264,
+   "hra_received": 638,
+   "rent_paid": 230062,
+   "metro": true,
+   "sec_80c": 176460,
+   "sec_80ccd1b": 22384,
+   "sec_80d_self": 46236,
+   "sec_80d_parents": 20279,
+   "parents_senior": true,
+   "home_loan_interest": 218648
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 7820,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-288",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 547147,
+   "basic_salary": 142016,
+   "hra_received": 54989,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 123409,
+   "sec_80ccd1b": 44730,
+   "sec_80d_self": 22515,
+   "sec_80d_parents": 22768,
+   "parents_senior": true,
+   "home_loan_interest": 251496
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 83730,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 472150,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-289",
+  "input": {
+   "fy": "2025-26",
+   "age": 88,
+   "gross_salary": 2448146,
+   "basic_salary": 76997,
+   "hra_received": 42178,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 95993,
+   "sec_80ccd1b": 33272,
+   "sec_80d_self": 54821,
+   "sec_80d_parents": 49477,
+   "parents_senior": true,
+   "home_loan_interest": 192697
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1976710,
+    "tax_payable": 408730
+   },
+   "new": {
+    "taxable_income": 2373150,
+    "tax_payable": 305020
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-290",
+  "input": {
+   "fy": "2025-26",
+   "age": 35,
+   "gross_salary": 286926,
+   "basic_salary": 14204,
+   "hra_received": 6731,
+   "rent_paid": 761151,
+   "metro": false,
+   "sec_80c": 161588,
+   "sec_80ccd1b": 11890,
+   "sec_80d_self": 55905,
+   "sec_80d_parents": 33399,
+   "parents_senior": false,
+   "home_loan_interest": 170444
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 211930,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-291",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 1733518,
+   "basic_salary": 189960,
+   "hra_received": 10232,
+   "rent_paid": 796208,
+   "metro": false,
+   "sec_80c": 138410,
+   "sec_80ccd1b": 68228,
+   "sec_80d_self": 56905,
+   "sec_80d_parents": 25089,
+   "parents_senior": false,
+   "home_loan_interest": 112639
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1322240,
+    "tax_payable": 217540
+   },
+   "new": {
+    "taxable_income": 1658520,
+    "tax_payable": 136970
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-292",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 30278,
+   "basic_salary": 7028,
+   "hra_received": 4161,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 70957,
+   "sec_80ccd1b": 64039,
+   "sec_80d_self": 8959,
+   "sec_80d_parents": 36627,
+   "parents_senior": false,
+   "home_loan_interest": 170792
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-293",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 38249085,
+   "basic_salary": 18088984,
+   "hra_received": 3171791,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 34408,
+   "sec_80ccd1b": 8005,
+   "sec_80d_self": 52550,
+   "sec_80d_parents": 43689,
+   "parents_senior": false,
+   "home_loan_interest": 146993
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 37959680,
+    "tax_payable": 14560530
+   },
+   "new": {
+    "taxable_income": 38174090,
+    "tax_payable": 14341900
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-294",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 1150723,
+   "basic_salary": 566565,
+   "hra_received": 186987,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 14062,
+   "sec_80ccd1b": 24331,
+   "sec_80d_self": 44559,
+   "sec_80d_parents": 10085,
+   "parents_senior": true,
+   "home_loan_interest": 256766
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 827250,
+    "tax_payable": 81070
+   },
+   "new": {
+    "taxable_income": 1075720,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-295",
+  "input": {
+   "fy": "2025-26",
+   "age": 35,
+   "gross_salary": 572596,
+   "basic_salary": 269786,
+   "hra_received": 95461,
+   "rent_paid": 488258,
+   "metro": true,
+   "sec_80c": 85066,
+   "sec_80ccd1b": 19090,
+   "sec_80d_self": 46846,
+   "sec_80d_parents": 33307,
+   "parents_senior": true,
+   "home_loan_interest": 3966
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 260710,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 497600,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-296",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 26191176,
+   "basic_salary": 11821936,
+   "hra_received": 5859182,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 50155,
+   "sec_80ccd1b": 11803,
+   "sec_80d_self": 27711,
+   "sec_80d_parents": 43476,
+   "parents_senior": true,
+   "home_loan_interest": 89479
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 25918550,
+    "tax_payable": 9861230
+   },
+   "new": {
+    "taxable_income": 26116180,
+    "tax_payable": 9639310
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-297",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 252833,
+   "basic_salary": 48804,
+   "hra_received": 5194,
+   "rent_paid": 756138,
+   "metro": true,
+   "sec_80c": 95208,
+   "sec_80ccd1b": 27417,
+   "sec_80d_self": 20231,
+   "sec_80d_parents": 41244,
+   "parents_senior": false,
+   "home_loan_interest": 293085
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 177830,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-298",
+  "input": {
+   "fy": "2025-26",
+   "age": 35,
+   "gross_salary": 16663560,
+   "basic_salary": 1639523,
+   "hra_received": 121480,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 53364,
+   "sec_80ccd1b": 56831,
+   "sec_80d_self": 12405,
+   "sec_80d_parents": 58948,
+   "parents_senior": false,
+   "home_loan_interest": 224341
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 16272790,
+    "tax_payable": 5614430
+   },
+   "new": {
+    "taxable_income": 16588560,
+    "tax_payable": 5449660
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-299",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 1007678,
+   "basic_salary": 387518,
+   "hra_received": 95742,
+   "rent_paid": 9984,
+   "metro": false,
+   "sec_80c": 71587,
+   "sec_80ccd1b": 46423,
+   "sec_80d_self": 31992,
+   "sec_80d_parents": 9040,
+   "parents_senior": true,
+   "home_loan_interest": 75493
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 723140,
+    "tax_payable": 46410
+   },
+   "new": {
+    "taxable_income": 932680,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-300",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 1333616,
+   "basic_salary": 395734,
+   "hra_received": 159525,
+   "rent_paid": 732101,
+   "metro": false,
+   "sec_80c": 178789,
+   "sec_80ccd1b": 10332,
+   "sec_80d_self": 30211,
+   "sec_80d_parents": 30707,
+   "parents_senior": true,
+   "home_loan_interest": 275459
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 709280,
+    "tax_payable": 56530
+   },
+   "new": {
+    "taxable_income": 1258620,
+    "tax_payable": 60970
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-301",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 812347,
+   "basic_salary": 19519,
+   "hra_received": 1319,
+   "rent_paid": 73662,
+   "metro": false,
+   "sec_80c": 101248,
+   "sec_80ccd1b": 59895,
+   "sec_80d_self": 40196,
+   "sec_80d_parents": 31367,
+   "parents_senior": false,
+   "home_loan_interest": 80270
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 479510,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 737350,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-302",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 333880,
+   "basic_salary": 102717,
+   "hra_received": 6020,
+   "rent_paid": 560744,
+   "metro": true,
+   "sec_80c": 12108,
+   "sec_80ccd1b": 9322,
+   "sec_80d_self": 49321,
+   "sec_80d_parents": 39449,
+   "parents_senior": false,
+   "home_loan_interest": 175591
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 30840,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 258880,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-303",
+  "input": {
+   "fy": "2025-26",
+   "age": 88,
+   "gross_salary": 160676,
+   "basic_salary": 42238,
+   "hra_received": 23493,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 134764,
+   "sec_80ccd1b": 40975,
+   "sec_80d_self": 27450,
+   "sec_80d_parents": 2705,
+   "parents_senior": true,
+   "home_loan_interest": 96619
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 85680,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-304",
+  "input": {
+   "fy": "2025-26",
+   "age": 88,
+   "gross_salary": 10131431,
+   "basic_salary": 3995584,
+   "hra_received": 1600625,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 57295,
+   "sec_80ccd1b": 50426,
+   "sec_80d_self": 47856,
+   "sec_80d_parents": 2230,
+   "parents_senior": false,
+   "home_loan_interest": 73551
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 9850500,
+    "tax_payable": 3151890
+   },
+   "new": {
+    "taxable_income": 10056430,
+    "tax_payable": 3010210
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-305",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 1410978,
+   "basic_salary": 280292,
+   "hra_received": 113170,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 32025,
+   "sec_80ccd1b": 48298,
+   "sec_80d_self": 52811,
+   "sec_80d_parents": 14208,
+   "parents_senior": false,
+   "home_loan_interest": 290801
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1041450,
+    "tax_payable": 129930
+   },
+   "new": {
+    "taxable_income": 1335980,
+    "tax_payable": 83610
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-306",
+  "input": {
+   "fy": "2025-26",
+   "age": 80,
+   "gross_salary": 178323,
+   "basic_salary": 13848,
+   "hra_received": 6814,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 68859,
+   "sec_80ccd1b": 22150,
+   "sec_80d_self": 34388,
+   "sec_80d_parents": 17458,
+   "parents_senior": false,
+   "home_loan_interest": 44329
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 103320,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-307",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 267753,
+   "basic_salary": 30327,
+   "hra_received": 14660,
+   "rent_paid": 372945,
+   "metro": false,
+   "sec_80c": 135132,
+   "sec_80ccd1b": 4543,
+   "sec_80d_self": 59121,
+   "sec_80d_parents": 56305,
+   "parents_senior": false,
+   "home_loan_interest": 252423
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 192750,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-308",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 49298,
+   "basic_salary": 21360,
+   "hra_received": 1073,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 169437,
+   "sec_80ccd1b": 5715,
+   "sec_80d_self": 30892,
+   "sec_80d_parents": 16996,
+   "parents_senior": true,
+   "home_loan_interest": 286538
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-309",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 175737,
+   "basic_salary": 70997,
+   "hra_received": 23069,
+   "rent_paid": 562833,
+   "metro": true,
+   "sec_80c": 63514,
+   "sec_80ccd1b": 4121,
+   "sec_80d_self": 991,
+   "sec_80d_parents": 27099,
+   "parents_senior": true,
+   "home_loan_interest": 46857
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 100740,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-310",
+  "input": {
+   "fy": "2025-26",
+   "age": 60,
+   "gross_salary": 462561,
+   "basic_salary": 43146,
+   "hra_received": 18323,
+   "rent_paid": 529371,
+   "metro": true,
+   "sec_80c": 169381,
+   "sec_80ccd1b": 22140,
+   "sec_80d_self": 30678,
+   "sec_80d_parents": 6056,
+   "parents_senior": true,
+   "home_loan_interest": 38962
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 146400,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 387560,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-311",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 34333807,
+   "basic_salary": 4999082,
+   "hra_received": 2880275,
+   "rent_paid": 184241,
+   "metro": false,
+   "sec_80c": 36355,
+   "sec_80ccd1b": 197,
+   "sec_80d_self": 53372,
+   "sec_80d_parents": 24873,
+   "parents_senior": true,
+   "home_loan_interest": 261105
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 33972380,
+    "tax_payable": 13002230
+   },
+   "new": {
+    "taxable_income": 34258810,
+    "tax_payable": 12814940
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-312",
+  "input": {
+   "fy": "2025-26",
+   "age": 22,
+   "gross_salary": 1820233,
+   "basic_salary": 87263,
+   "hra_received": 48665,
+   "rent_paid": 681874,
+   "metro": true,
+   "sec_80c": 98891,
+   "sec_80ccd1b": 32080,
+   "sec_80d_self": 19905,
+   "sec_80d_parents": 38971,
+   "parents_senior": false,
+   "home_loan_interest": 296973
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1350730,
+    "tax_payable": 226430
+   },
+   "new": {
+    "taxable_income": 1745230,
+    "tax_payable": 155010
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-313",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 188365,
+   "basic_salary": 3742,
+   "hra_received": 1403,
+   "rent_paid": 749143,
+   "metro": false,
+   "sec_80c": 63610,
+   "sec_80ccd1b": 61795,
+   "sec_80d_self": 49184,
+   "sec_80d_parents": 10429,
+   "parents_senior": false,
+   "home_loan_interest": 263513
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 113370,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-314",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 501342,
+   "basic_salary": 1042,
+   "hra_received": 540,
+   "rent_paid": 154804,
+   "metro": false,
+   "sec_80c": 5318,
+   "sec_80ccd1b": 58236,
+   "sec_80d_self": 39879,
+   "sec_80d_parents": 19365,
+   "parents_senior": false,
+   "home_loan_interest": 199826
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 136540,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 426340,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-315",
+  "input": {
+   "fy": "2025-26",
+   "age": 88,
+   "gross_salary": 5252,
+   "basic_salary": 931,
+   "hra_received": 332,
+   "rent_paid": 0,
+   "metro": false,
+   "sec_80c": 71751,
+   "sec_80ccd1b": 57511,
+   "sec_80d_self": 50418,
+   "sec_80d_parents": 29098,
+   "parents_senior": false,
+   "home_loan_interest": 155922
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-316",
+  "input": {
+   "fy": "2025-26",
+   "age": 52,
+   "gross_salary": 2270439,
+   "basic_salary": 621687,
+   "hra_received": 164180,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 183252,
+   "sec_80ccd1b": 38596,
+   "sec_80d_self": 46699,
+   "sec_80d_parents": 49803,
+   "parents_senior": false,
+   "home_loan_interest": 117885
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 1863960,
+    "tax_payable": 386560
+   },
+   "new": {
+    "taxable_income": 2195440,
+    "tax_payable": 258810
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-317",
+  "input": {
+   "fy": "2025-26",
+   "age": 79,
+   "gross_salary": 341239,
+   "basic_salary": 100967,
+   "hra_received": 8418,
+   "rent_paid": 675848,
+   "metro": true,
+   "sec_80c": 143937,
+   "sec_80ccd1b": 39699,
+   "sec_80d_self": 59767,
+   "sec_80d_parents": 35581,
+   "parents_senior": false,
+   "home_loan_interest": 198200
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 0,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 266240,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ },
+ {
+  "id": "fuzz-2025-26-318",
+  "input": {
+   "fy": "2025-26",
+   "age": 66,
+   "gross_salary": 276463,
+   "basic_salary": 46039,
+   "hra_received": 16668,
+   "rent_paid": 0,
+   "metro": true,
+   "sec_80c": 112855,
+   "sec_80ccd1b": 16388,
+   "sec_80d_self": 29152,
+   "sec_80d_parents": 24586,
+   "parents_senior": false,
+   "home_loan_interest": 31024
+  },
+  "expected": {
+   "old": {
+    "taxable_income": 12460,
+    "tax_payable": 0
+   },
+   "new": {
+    "taxable_income": 201460,
+    "tax_payable": 0
+   }
+  },
+  "source": "oracle"
+ }
+]

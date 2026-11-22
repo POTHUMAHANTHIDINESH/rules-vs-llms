@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+project_b/data/*.csv
+.pytest_cache/

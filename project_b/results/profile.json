@@ -1,0 +1,163 @@
+{
+ "source": "SYNTHETIC (dry run; these are NOT real NYC findings)",
+ "created_date_unparseable": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "created_outside_2023": {
+  "count": 1,
+  "pct": 0.0005,
+  "examples": [
+   {
+    "Unique Key": 56199134,
+    "Created Date": "01/02/2024 06:35:41 AM"
+   }
+  ]
+ },
+ "closed_before_created": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "closed_in_future_or_pre_2023": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "closed_date_missing_but_status_closed": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "closed_date_present_but_status_open": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "exact_duplicate_rows": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "duplicate_unique_key": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "latlon_missing": {
+  "count": 5948,
+  "pct": 2.974,
+  "examples": [
+   {
+    "Unique Key": 56000170,
+    "Borough": "MANHATTAN",
+    "Incident Zip": "10020"
+   },
+   {
+    "Unique Key": 56000245,
+    "Borough": "BRONX",
+    "Incident Zip": "10475"
+   },
+   {
+    "Unique Key": 56000282,
+    "Borough": "BROOKLYN",
+    "Incident Zip": "11223"
+   }
+  ]
+ },
+ "latlon_outside_nyc_bbox": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "latlon_exactly_zero": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "zip_missing": {
+  "count": 2079,
+  "pct": 1.0395,
+  "examples": [
+   {
+    "Unique Key": 56000066
+   },
+   {
+    "Unique Key": 56000069
+   },
+   {
+    "Unique Key": 56000084
+   }
+  ]
+ },
+ "zip_not_5_digits": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "zip_borough_mismatch": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "borough_unspecified_or_missing": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "descriptor_missing": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "rare_complaint_descriptor_pair(<=2 rows)": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "resolution_missing": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "pii_phone_or_email_in_resolution": {
+  "count": 0,
+  "pct": 0.0,
+  "examples": []
+ },
+ "case_or_whitespace_variants_in_Agency": {
+  "count": 0,
+  "examples": []
+ },
+ "case_or_whitespace_variants_in_Complaint Type": {
+  "count": 0,
+  "examples": []
+ },
+ "case_or_whitespace_variants_in_Borough": {
+  "count": 0,
+  "examples": []
+ },
+ "case_or_whitespace_variants_in_Status": {
+  "count": 0,
+  "examples": []
+ },
+ "null_rate_by_column": {
+  "Unique Key": 0.0,
+  "Created Date": 0.0,
+  "Closed Date": 0.1394,
+  "Agency": 0.0,
+  "Complaint Type": 0.0,
+  "Descriptor": 0.0,
+  "Location Type": 0.0,
+  "Incident Zip": 0.0104,
+  "City": 0.0,
+  "Borough": 0.0,
+  "Latitude": 0.0297,
+  "Longitude": 0.0297,
+  "Status": 0.0,
+  "Resolution Description": 0.0,
+  "Open Data Channel Type": 0.0
+ },
+ "rows": 200000
+}

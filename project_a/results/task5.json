@@ -1,0 +1,35 @@
+{
+ "n_fy2526_cases": 159,
+ "change_size": {
+  "b_rule_text_lines_changed": 11,
+  "c_dsl_json_lines_changed": 28,
+  "a_constants_changed": 4,
+  "a_code_logic_lines_changed": 0
+ },
+ "mutations": {
+  "forgot new slabs (kept FY24-25 slabs)": {
+   "a_wrong_cases_silent_at_runtime": 86,
+   "c_wrong_cases_silent_at_runtime": 86
+  },
+  "forgot rebate limit (kept 7L)": {
+   "a_wrong_cases_silent_at_runtime": 22,
+   "c_wrong_cases_silent_at_runtime": 22
+  },
+  "forgot rebate max (kept 25k)": {
+   "a_wrong_cases_silent_at_runtime": 13,
+   "c_wrong_cases_silent_at_runtime": 13
+  },
+  "slab boundary typo 12L->12.5L": {
+   "a_wrong_cases_silent_at_runtime": 82,
+   "c_wrong_cases_silent_at_runtime": 82
+  },
+  "forgot 25% slab (20L-24L at 30%)": {
+   "a_wrong_cases_silent_at_runtime": 37,
+   "c_wrong_cases_silent_at_runtime": 37
+  }
+ },
+ "unknown_fy": {
+  "a": "loud (KeyError)",
+  "c": "loud (KeyError)"
+ }
+}

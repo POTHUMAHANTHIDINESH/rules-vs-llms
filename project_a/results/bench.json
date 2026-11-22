@@ -1,0 +1,65 @@
+{
+ "suite_size": 319,
+ "engines": {
+  "a_hand_coded": {
+   "n_cases": 319,
+   "correct": 319,
+   "errors": 0,
+   "traceable": 319,
+   "cost": 0.0,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "accuracy": 1.0,
+   "trace_rate": 1.0,
+   "wrong_ids": [],
+   "silent_wrong": 0,
+   "latency_ms_p50": 0.013891000037347112,
+   "latency_ms_p95": 0.022962000002735294,
+   "cost_per_1000_usd": 0.0,
+   "determinism": {
+    "inputs": 50,
+    "repeats": 10,
+    "inputs_with_varying_output": 0
+   }
+  },
+  "c_llm_compiled": {
+   "n_cases": 319,
+   "correct": 319,
+   "errors": 0,
+   "traceable": 319,
+   "cost": 0.0,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "accuracy": 1.0,
+   "trace_rate": 1.0,
+   "wrong_ids": [],
+   "silent_wrong": 0,
+   "latency_ms_p50": 0.014764000013656187,
+   "latency_ms_p95": 0.02713899999662317,
+   "cost_per_1000_usd": 0.0,
+   "determinism": {
+    "inputs": 50,
+    "repeats": 10,
+    "inputs_with_varying_output": 0
+   }
+  },
+  "b_llm_query_time": {
+   "status": "not_run",
+   "reason": "GEMINI_API_KEY not set"
+  }
+ },
+ "parser_llm": {
+  "status": "not_run",
+  "reason": "GEMINI_API_KEY not set"
+ },
+ "parser_rules": {
+  "n": 50,
+  "status_ok": 50,
+  "inputs_ok": 25,
+  "missing_ok": 15,
+  "silent_guess": 0,
+  "n_ready_expected": 25,
+  "n_clarify_expected": 15,
+  "failing_ids": []
+ }
+}
